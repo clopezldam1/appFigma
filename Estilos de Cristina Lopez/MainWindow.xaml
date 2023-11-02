@@ -5,8 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="CreatiNation: Explora tu creatividad" Height="1000" Width="1920" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
+    <!-- !!!CREAR ESTILO GENREAL (DEFAULT) DE VENTANA PARA QUE AFECTE A LAS PÁGINAS-->
+    <DockPanel>
+        <!-- Banner (parte superior TOP)-->
+        <Menu DockPanel.Dock="Top">
+            <!-- Menú button INDEX-->
+            <MenuItem Header="Fichero">
+                <MenuItem Header="_Nuevo"/>
+            </MenuItem>
+
+            <!-- Menú button HOME -->
+            <MenuItem Header="Herramientas">
+                <MenuItem Header="_Gestión de Usuarios" >
+                    <MenuItem.Icon>
+                        <Image Source="imgs/letrero_pintura_4.png" Stretch="Fill"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Mostrar Grupos" IsCheckable="True" IsChecked="True"/>
+            </MenuItem>
+
+            <!-- Menú button BACK-->
+            <MenuItem Header="Fichero">
+                <MenuItem Header="_Nuevo" />
+            </MenuItem>
+
+            <!-- Image banner letras NATION -->
+            <MenuItem Header="_Editar">
+                <MenuItem Header="_Cortar" />
+            </MenuItem>
+
+            <!-- Menú button ACCOUNT-->
+            <MenuItem Header="Fichero">
+                <MenuItem Header="_Nuevo" />
+            </MenuItem>
+
+        </Menu>
+
+        <!-- NavBar (parte superior BOTTOM)-->
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1920" HorizontalContentAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <!-- Menú NATION-->
+                <MenuItem Header="CreatiNation" Width="384"/>
+                <MenuItem Header="Sobre nosotros" />
+                <MenuItem Header="Tienda física" />
+                <MenuItem Header="Galería de imágenes" />
+                <MenuItem Header="Contacto tienda" />
+
+
+                <!-- Menú ACADEMY -->
+                <MenuItem Header="CreatiAcademy" Width="384">
+                <MenuItem Header="Clases carpintería" >
+                    <MenuItem.Icon>
+                        <Image Source="imgs/letrero_pintura_4.png" Stretch="Fill"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Clases escultura goma eva" />
+                <MenuItem Header="Clases artes plásticas" />
+                <MenuItem Header="Calendario talleres" />
+                <MenuItem Header="Contacto clases/talleres" />
+            </MenuItem>
+
+            <!-- Menú SHOP -->
+                <MenuItem Header="CreatiShop" Width="384">
+                <MenuItem Header="Comisiones"/>
+                <MenuItem Header="Reseñas"/>
+                <MenuItem Header="Galería productos"/>
+                <MenuItem Header="Contacto comisiones"/>
+            </MenuItem>
+
+            <!-- Menú TUTORIAL -->
+                <MenuItem Header="CreatiTutorial" Width="384">
+                <MenuItem Header="Arte y manualidades" />
+                <MenuItem Header="Cosplay y disfraces"/>
+                <MenuItem Header="Otras categorías"/>
+                <MenuItem Header="Listas de reproducción"/>
+                <MenuItem Header="Contacto tutoriales"/>
+            </MenuItem>
+
+            <!-- Menú QnA -->
+                <MenuItem Header="CreatiQnA" Width="384">
+                <MenuItem Header="Leer foros" />
+                <MenuItem Header="Mis preguntas"/>
+                <MenuItem Header="Mis contribuciones"/>
+            </MenuItem>
+            </StackPanel>
+        </Menu>
+
+        <!-- Contenido de la página -->
+        <Grid>
+            <Frame Name="myFrame" Content="Frame_contenido" HorizontalAlignment="Left" Height="286" Margin="238,155,0,0" VerticalAlignment="Top" Width="472"/>
+        </Grid>
+
+        <!-- Footer Simple (parte inferior fijo)-->
+        <WrapPanel DockPanel.Dock="Bottom">
+            <!-- Menú REDES SOCIALES-->
+            <TextBlock >
+             
+            </TextBlock>
+        </WrapPanel>
+
+    </DockPanel>
 </Window>

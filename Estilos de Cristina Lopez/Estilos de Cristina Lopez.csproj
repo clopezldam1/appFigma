@@ -55,7 +55,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="homePage.xaml.cs">
+      <DependentUpon>homePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.xaml.cs">
+      <DependentUpon>loginForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForm.xaml.cs">
+      <DependentUpon>SignUpForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpPopUp.xaml.cs">
+      <DependentUpon>SignUpPopUp.xaml</DependentUpon>
+    </Compile>
+    <Page Include="homePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="loginForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="mainwindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,10 +83,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="mainwindow.xaml.cs">
+      <DependentUpon>mainwindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SignUpForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +121,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="imgs\costura_boton-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\deco_fondo_pintura_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\deco_fondo_general-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\letrero_pintura_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\mancha_acuarela_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\mancha_pintura_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\mancha_pintura_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\marco_pintura_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\mancha_pintura_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
