@@ -122,7 +122,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="mancha_acuarela_1.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="imgs\costura_boton-2.png" />
   </ItemGroup>
@@ -149,6 +151,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imgs\mancha_pintura_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mancha_acuarela_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_burger_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg_rectangle_watercolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_account.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,91 +5,197 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
         mc:Ignorable="d"
-        Title="CreatiNation: Explora tu creatividad" Height="1000" Width="1920" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
+        Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterOwner" ResizeMode="CanResize" >
     <!-- !!!CREAR ESTILO GENREAL (DEFAULT) DE VENTANA PARA QUE AFECTE A LAS PÁGINAS-->
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
-        <Menu DockPanel.Dock="Top">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="bg_rectangle_watercolor.png" Stretch="UniformToFill"/>
+            </StackPanel.Background>
+
             <!-- Menú button INDEX-->
-            <MenuItem Header="Fichero">
-                <MenuItem Header="_Nuevo"/>
-            </MenuItem>
+            <Button ToolTip="Index" Height="40" Width="60" BorderBrush="{x:Null}" Margin="0,5" Background="{x:Null}">
+                    <Image Source="icon_burger_menu.png" Stretch="Uniform"/>
+            </Button>
 
             <!-- Menú button HOME -->
-            <MenuItem Header="Herramientas">
-                <MenuItem Header="_Gestión de Usuarios" >
-                    <MenuItem.Icon>
-                        <Image Source="imgs/letrero_pintura_4.png" Stretch="Fill"/>
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="_Mostrar Grupos" IsCheckable="True" IsChecked="True"/>
-            </MenuItem>
+            <Button ToolTip="Home" Height="40" Width="60" BorderBrush="{x:Null}" Margin="0,5" Background="{x:Null}">
+                    <Image Source="icon_home.png" Stretch="Uniform"/>
+            </Button>
 
             <!-- Menú button BACK-->
-            <MenuItem Header="Fichero">
-                <MenuItem Header="_Nuevo" />
-            </MenuItem>
+            <Button ToolTip="Volver" Height="40" Width="60" BorderBrush="{x:Null}" Margin="0,5" Background="{x:Null}">
+                    <Image Source="icon_back.png" Stretch="Uniform"/>
+            </Button>
 
             <!-- Image banner letras NATION -->
-            <MenuItem Header="_Editar">
-                <MenuItem Header="_Cortar" />
-            </MenuItem>
+            <TextBlock Text="CreatiNation" Height="50" Width="1030" TextAlignment="Center" FontSize="38" VerticalAlignment="Center" Padding="40,0,0,0" FontFamily="Segoe Script" FontWeight="Bold" Margin="0,0,0,2.3"/>
 
             <!-- Menú button ACCOUNT-->
-            <MenuItem Header="Fichero">
-                <MenuItem Header="_Nuevo" />
-            </MenuItem>
+            <Button Width="184" BorderBrush="{x:Null}" Background="{x:Null}">
+                <StackPanel Height="50" >
+                    <Image Source="icon_account.png" Stretch="Uniform" Height="30"/>
+                    <Label Content="Área cliente" Background="{x:Null}" BorderBrush="{x:Null}"/>
+                </StackPanel>
+            </Button>
 
-        </Menu>
+        </StackPanel>
 
         <!-- NavBar (parte superior BOTTOM)-->
-        <Menu DockPanel.Dock="Top" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1920" HorizontalContentAlignment="Center">
-            <StackPanel Orientation="Horizontal">
-                <!-- Menú NATION-->
-                <MenuItem Header="CreatiNation" Width="384"/>
-                <MenuItem Header="Sobre nosotros" />
-                <MenuItem Header="Tienda física" />
-                <MenuItem Header="Galería de imágenes" />
-                <MenuItem Header="Contacto tienda" />
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Center" Width="1400">
+            <!-- Menú NATION-->
+            <MenuItem Header="CreatiNation" Width="280" StaysOpenOnClick="True" Cursor="Hand" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20,5" Grid.IsSharedSizeScope="True">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
+                </MenuItem.Background>
 
+                <MenuItem Header="Sobre nosotros" >
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
 
-                <!-- Menú ACADEMY -->
-                <MenuItem Header="CreatiAcademy" Width="384">
+                <MenuItem Header="Tienda física">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+
+                <MenuItem Header="Galería de imágenes">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+
+                <MenuItem Header="Contacto tienda">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+            </MenuItem>
+
+            <!-- Menú ACADEMY -->
+            <MenuItem Header="CreatiAcademy" Width="280" StaysOpenOnClick="True" Cursor="Hand" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20,5" Grid.IsSharedSizeScope="True">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
+                </MenuItem.Background>
+
                 <MenuItem Header="Clases carpintería" >
                     <MenuItem.Icon>
                         <Image Source="imgs/letrero_pintura_4.png" Stretch="Fill"/>
                     </MenuItem.Icon>
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
                 </MenuItem>
-                <MenuItem Header="Clases escultura goma eva" />
-                <MenuItem Header="Clases artes plásticas" />
-                <MenuItem Header="Calendario talleres" />
-                <MenuItem Header="Contacto clases/talleres" />
+
+                <MenuItem Header="Clases escultura goma eva">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Clases artes plásticas">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Calendario talleres">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Contacto clases/talleres">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
             </MenuItem>
 
             <!-- Menú SHOP -->
-                <MenuItem Header="CreatiShop" Width="384">
-                <MenuItem Header="Comisiones"/>
-                <MenuItem Header="Reseñas"/>
-                <MenuItem Header="Galería productos"/>
-                <MenuItem Header="Contacto comisiones"/>
+            <MenuItem Header="CreatiShop" Width="280" StaysOpenOnClick="True" Cursor="Hand" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20,5" Grid.IsSharedSizeScope="True">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
+                </MenuItem.Background>
+
+                <MenuItem Header="Comisiones">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Reseñas">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Galería productos">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Contacto comisiones">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
             </MenuItem>
 
             <!-- Menú TUTORIAL -->
-                <MenuItem Header="CreatiTutorial" Width="384">
-                <MenuItem Header="Arte y manualidades" />
-                <MenuItem Header="Cosplay y disfraces"/>
-                <MenuItem Header="Otras categorías"/>
-                <MenuItem Header="Listas de reproducción"/>
-                <MenuItem Header="Contacto tutoriales"/>
+            <MenuItem Header="CreatiTutorial" Width="280" StaysOpenOnClick="True" Cursor="Hand" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20,5" Grid.IsSharedSizeScope="True">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
+                </MenuItem.Background>
+
+                <MenuItem Header="Arte y manualidades">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Cosplay y disfraces">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Otras categorías">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Listas de reproducción">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Contacto tutoriales">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
             </MenuItem>
 
             <!-- Menú QnA -->
-                <MenuItem Header="CreatiQnA" Width="384">
-                <MenuItem Header="Leer foros" />
-                <MenuItem Header="Mis preguntas"/>
-                <MenuItem Header="Mis contribuciones"/>
+            <MenuItem Header="CreatiQnA" Width="280" StaysOpenOnClick="True" Cursor="Hand" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20,5" Grid.IsSharedSizeScope="True">
+                <MenuItem.Background>
+                    <ImageBrush ImageSource="mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
+                </MenuItem.Background>
+
+                <MenuItem Header="Leer foros">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Mis preguntas">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
+                <MenuItem Header="Mis contribuciones">
+                    <MenuItem.Background>
+                        <ImageBrush Stretch="None" ImageSource="mancha_acuarela_5.png"/>
+                    </MenuItem.Background>
+                </MenuItem>
             </MenuItem>
-            </StackPanel>
+
         </Menu>
 
         <!-- Contenido de la página -->
@@ -101,9 +207,10 @@
         <WrapPanel DockPanel.Dock="Bottom">
             <!-- Menú REDES SOCIALES-->
             <TextBlock >
-             
+
             </TextBlock>
         </WrapPanel>
+        <Image Height="604" VerticalAlignment="Top" Width="100"/>
 
     </DockPanel>
 </Window>
