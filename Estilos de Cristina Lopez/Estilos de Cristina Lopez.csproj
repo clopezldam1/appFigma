@@ -123,7 +123,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="mancha_acuarela_1.png" />
+    <Resource Include="imgs\mancha_acuarela_1.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imgs\costura_boton-2.png" />
@@ -153,37 +153,37 @@
     <Resource Include="imgs\mancha_pintura_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="mancha_acuarela_5.png" />
+    <Resource Include="imgs\mancha_acuarela_5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_burger_menu.png" />
+    <Resource Include="imgs\icon_burger_menu.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_home.png" />
+    <Resource Include="imgs\icon_home.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_back.png" />
+    <Resource Include="imgs\icon_back.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bg_rectangle_watercolor.png" />
+    <Resource Include="imgs\bg_rectangle_watercolor.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_account.png" />
+    <Resource Include="imgs\icon_account.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_twitter.png" />
+    <Resource Include="imgs\icon_twitter.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_instagram.png" />
+    <Resource Include="imgs\icon_instagram.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_youtube.png" />
+    <Resource Include="imgs\icon_youtube.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon_map_pin.png" />
+    <Resource Include="imgs\icon_map_pin.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="mancha_acuarela_6.png" />
+    <Resource Include="imgs\mancha_acuarela_6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
