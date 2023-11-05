@@ -191,5 +191,8 @@
   <ItemGroup>
     <Resource Include="logo_letras_provisional-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mancha_pintura_13_salmon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
