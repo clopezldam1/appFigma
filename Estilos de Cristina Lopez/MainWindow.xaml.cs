@@ -24,5 +24,11 @@ namespace Estilos_de_Cristina_Lopez
         {
             InitializeComponent();
         }
+
+        private void aplicacionIniciada(object sender, RoutedEventArgs e)
+        {
+            //Aquí iniciamos la aplicación mostrando la primera página que sale al lanzarla: el login
+            //contenidoPagina = new loginForm();
+        }
     }
 }

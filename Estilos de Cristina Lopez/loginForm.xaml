@@ -5,10 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="loginForm">
+      d:DesignHeight="490" d:DesignWidth="1394"
+      Title="loginForm" Background="White" ScrollViewer.VerticalScrollBarVisibility="Visible" ClipToBounds="True">
+    <!-- ClipToBounds="True"-->
 
-    <Grid>
-        
+    <Grid ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="White" Height="490" Width="1394">
+        <!-- Fondo pagina-->
+        <Image Source="imgs/deco_fondo_pintura_2.png" MaxWidth="1400" Stretch="UniformToFill" StretchDirection="Both"/>
+        <StackPanel Height="490" Width="1394" Orientation="Horizontal">
+            <!-- credenciales, mitad izquierda-->
+            <StackPanel Height="490" Width="800">
+
+            </StackPanel>
+
+            <!-- imagen logotipo, mitad derecha-->
+            <Canvas Height="490" Width="600">
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Top="125">
+                    <Image Source="imgs/logo_letras_provisional-removebg-preview.png" MaxWidth="590" Stretch="UniformToFill" />
+                </Button>
+            </Canvas>
+        </StackPanel>
+
+
     </Grid>
 </Page>
