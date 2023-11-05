@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
         d:DesignHeight="490" d:DesignWidth="1394" Height="700" Width="1400" 
       Title="CreatiNation: Explora tu creatividad" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
-    <!-- !!!CREAR ESTILO GENREAL (DEFAULT) DE VENTANA PARA QUE AFECTE A LAS PÁGINAS-->
+ 
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
