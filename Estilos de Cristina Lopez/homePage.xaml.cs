@@ -18,7 +18,7 @@ namespace Estilos_de_Cristina_Lopez
     /// <summary>
     /// Lógica de interacción para homePage.xaml
     /// </summary>
-    public partial class homePage : Page
+    public partial class homePage : Window
     {
         public homePage()
         {

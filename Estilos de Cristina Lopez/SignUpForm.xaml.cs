@@ -18,7 +18,7 @@ namespace Estilos_de_Cristina_Lopez
     /// <summary>
     /// Lógica de interacción para SignUpForm.xaml
     /// </summary>
-    public partial class SignUpForm : Page
+    public partial class SignUpForm : Window
     {
         public SignUpForm()
         {

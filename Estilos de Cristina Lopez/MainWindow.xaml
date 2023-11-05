@@ -196,8 +196,9 @@
         </Menu>
 
         <!-- Contenido de la página -->
-        <StackPanel DockPanel.Dock="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" AllowDrop="True">
-            <Frame Name="myFrame" Content="Frame_contenido" HorizontalAlignment="Left" VerticalAlignment="Top" Height="490"  Width="1394"/>
+        <StackPanel DockPanel.Dock="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" AllowDrop="True" Height="490"  Width="1394" Background="White" ClipToBounds="True">
+           
+            
         </StackPanel>
 
         <!-- Footer Simple (parte inferior fijo)-->

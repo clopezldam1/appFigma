@@ -18,11 +18,19 @@ namespace Estilos_de_Cristina_Lopez
     /// <summary>
     /// Lógica de interacción para loginForm.xaml
     /// </summary>
-    public partial class loginForm : Page
+    public partial class loginForm : Window
     {
         public loginForm()
         {
             InitializeComponent();
+        }
+
+        private void boton_signUp(object sender, RoutedEventArgs e)
+        {
+            //Aquí iniciamos la aplicación mostrando la primera página que sale al lanzarla: el login
+            Frame rootFrame = new Frame();
+            rootFrame.NavigationService.Navigate(new SignUpForm());
+            // MainWindow.pageFrame.NavigationService.Navigate(new loginForm());
         }
     }
 }

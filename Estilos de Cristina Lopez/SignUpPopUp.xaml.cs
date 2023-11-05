@@ -18,7 +18,7 @@ namespace Estilos_de_Cristina_Lopez
     /// <summary>
     /// Lógica de interacción para SignUpPopUp.xaml
     /// </summary>
-    public partial class SignUpPopUp : Page
+    public partial class SignUpPopUp : Window
     {
         public SignUpPopUp()
         {
