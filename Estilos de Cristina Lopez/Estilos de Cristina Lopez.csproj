@@ -186,10 +186,10 @@
     <Resource Include="imgs\mancha_acuarela_6.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="letrero_pintura_4_blue.png" />
+    <Resource Include="imgs\letrero_pintura_4_blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo_letras_provisional-removebg-preview.png" />
+    <Resource Include="imgs\logo_letras_provisional-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="mancha_pintura_13_salmon.png" />
