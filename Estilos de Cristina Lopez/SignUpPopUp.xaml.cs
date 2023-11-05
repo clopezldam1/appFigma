@@ -24,5 +24,12 @@ namespace Estilos_de_Cristina_Lopez
         {
             InitializeComponent();
         }
+
+        private void boton_home(object sender, RoutedEventArgs e)
+        {
+            homePage home = new homePage();
+            this.Close();
+            home.Show();
+        }
     }
 }

@@ -25,7 +25,10 @@ namespace Estilos_de_Cristina_Lopez
             InitializeComponent();
 
             //Aquí iniciamos la aplicación mostrando la primera página que sale al lanzarla: el login
-            //pageFrame.NavigationService.Navigate(new loginForm());
+            loginForm login = new loginForm();
+            this.Close();
+            login.Show();
+
         }
  
     }

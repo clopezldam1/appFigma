@@ -21,7 +21,7 @@
             </Button>
 
             <!-- Menú button HOME -->
-            <Button ToolTip="Home" Height="40" Width="60" BorderBrush="{x:Null}" Margin="0,5" Background="{x:Null}">
+            <Button ToolTip="Home" Height="40" Width="60" BorderBrush="{x:Null}" Margin="0,5" Background="{x:Null}" Click="boton_home">
                 <Image Source="imgs/icon_home.png" Stretch="Uniform"/>
             </Button>
 
@@ -224,7 +224,7 @@
 
             <!-- botón registrarme -->
             <StackPanel Margin="0,30">
-                <Button Width="320" Height="80" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Button Width="320" Height="80" Background="{x:Null}" BorderBrush="{x:Null}" Click="boton_home">
                     <Canvas Height="80" Width="320">
                         <Label Content="Ir al inicio del sitio" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="70" Width="320"/>
                         <Image Source="imgs/letrero_pintura_4_blue.png"  Width="320" Stretch="Fill" StretchDirection="Both" Height="80"/>

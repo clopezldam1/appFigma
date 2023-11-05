@@ -27,10 +27,16 @@ namespace Estilos_de_Cristina_Lopez
 
         private void boton_signUp(object sender, RoutedEventArgs e)
         {
-            //Aquí iniciamos la aplicación mostrando la primera página que sale al lanzarla: el login
-            Frame rootFrame = new Frame();
-            rootFrame.NavigationService.Navigate(new SignUpForm());
-            // MainWindow.pageFrame.NavigationService.Navigate(new loginForm());
+            SignUpForm signUpForm = new SignUpForm();
+            this.Close();
+            signUpForm.Show();
+        }
+
+        private void boton_home(object sender, RoutedEventArgs e)
+        {
+            homePage home = new homePage();
+            this.Close();
+            home.Show();
         }
     }
 }
