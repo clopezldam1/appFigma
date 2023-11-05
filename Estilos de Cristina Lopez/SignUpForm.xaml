@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
       mc:Ignorable="d" 
         d:DesignHeight="490" d:DesignWidth="1394" Height="700" Width="1400" 
-      Title="CreatiNation: Explora tu creatividad" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible">
+      Title="CreatiNation: Explora tu creatividad" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <!-- !!!CREAR ESTILO GENREAL (DEFAULT) DE VENTANA PARA QUE AFECTE A LAS PÁGINAS-->
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
@@ -196,170 +196,171 @@
 
         </Menu>
 
-        <!-- Contenido de la página -->
-        <Grid Name="contenido" DockPanel.Dock="Top" Panel.ZIndex="-1" Height="490"  Width="1394" Background="White" ClipToBounds="True">
-            <!-- ClipToBounds="True"-->
+        <Grid>
+            <!-- Contenido de la página -->
+            <Grid Name="contenido" DockPanel.Dock="Top" SelectiveScrollingGrid.SelectiveScrollingOrientation="Vertical">
+                <!-- ClipToBounds="True"-->
 
-            <Grid Margin="0,0,-0.4,-513.4" Background="White" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <Grid Margin="0,0,-0.4,-513.4" Background="White"  Width="1394" Panel.ZIndex="0" >
 
-        <Image Source="imgs/deco_fondo_pintura_2.png" MaxWidth="1400" Stretch="Fill" StretchDirection="Both"/>
+            <Image Source="imgs/deco_fondo_pintura_2.png" MaxWidth="1400" Stretch="Fill" StretchDirection="Both" Margin="0,-10,0,9.8"/>
 
-        <Canvas Width="1000" HorizontalAlignment="Center">
-            <Image Source="imgs/mancha_pintura_13_blue.png" MaxWidth="1000" Width="997" Opacity="0.6" Stretch="UniformToFill" StretchDirection="Both"/>
-            <Image Source="imgs/mancha_pintura_13_blue.png" MaxWidth="1000" Width="997" Opacity="0.6" Stretch="UniformToFill" StretchDirection="Both" Canvas.Top="639" Height="364"/>
-        </Canvas>
+            <Canvas Width="1000" HorizontalAlignment="Center">
+                <Image Source="imgs/mancha_pintura_13_blue.png" MaxWidth="1000" Width="997" Opacity="0.6" Stretch="UniformToFill" StretchDirection="Both" Canvas.Top="-10"/>
+                <Image Source="imgs/mancha_pintura_13_blue.png" MaxWidth="1000" Width="997" Opacity="0.6" Stretch="UniformToFill" StretchDirection="Both" Canvas.Top="634" Height="458"/>
+            </Canvas>
 
-        <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Center">
-            <!-- titulo form -->
-            <StackPanel>
-                <Label Content="CREAR CUENTA" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="15" />
-                <Canvas Height="5" Background="White" Margin="0,0,0,20"/>
-            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Center">
+                <!-- titulo form -->
+                <StackPanel>
+                    <Label Content="CREAR CUENTA" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="15" />
+                    <Canvas Height="5" Background="White" Margin="0,0,0,20"/>
+                </StackPanel>
 
-            <!-- input nombre -->
-            <StackPanel Margin="0,10">
-                <Label Content="Nombre:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input apellidos -->
-            <StackPanel Margin="0,10">
-                <Label Content="Apellidos:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input fecha nacimiento -->
-            <StackPanel Margin="0,10">
-                <Label Content="Fecha de naciemiento:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <DatePicker Name="fechaNaci" Height="30" FontStyle="Italic" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480" DisplayDate="2023-11-05">
-                        <DatePicker.BlackoutDates>
-                            <CalendarDateRange Start="1980-01-01" End="2023-11-05" />
-                        </DatePicker.BlackoutDates>
-                    </DatePicker>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input género -->
-            <StackPanel Margin="0,10">
-                <Label Content="Género:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <StackPanel Panel.ZIndex="1" Name="opGenero" Height="30" Cursor="IBeam" Background="{x:Null}" Canvas.Left="10" Orientation="Horizontal">
-                        <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Hombre</RadioButton>
-
-                        <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Mujer</RadioButton>
-
-                        <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Otro:</RadioButton>
-
-                        <TextBox Height="20" Text="Tus pronombres..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="#FF9C9C9C" Cursor="IBeam" Background="#FFF9F9F9" Panel.ZIndex="1" Canvas.Left="10" Padding="10,0" BorderThickness="2" Foreground="#FF717171"/>
-                    </StackPanel>
-
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input numero telefono -->
-            <StackPanel Margin="0,10">
-                <Label Content="Número de teléfono:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input nombre usuario -->
-            <StackPanel Margin="0,10">
-                <Label Content="Nombre de usuario:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input correo electronico -->
-            <StackPanel Margin="0,10">
-                <Label Content="Correo electrónico:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input contraseña-->
-            <StackPanel Margin="0,10">
-                <Label Content="Contraseña de CreatiNation:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- input repetir contrseña -->
-            <StackPanel Margin="0,10">
-                <Label Content="Repetir contraseña:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
-                <Canvas Height="30">
-                    <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
-                    <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                </Canvas>
-            </StackPanel>
-
-            <!-- botón registrarme -->
-            <StackPanel Margin="0,30">
-                <Button Width="300" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="boton_popUp_signup">
-                    <Canvas Height="60" Width="300">
-                        <Label Content="Registrarme" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="300"/>
-                        <Image Source="imgs/letrero_pintura_4_blue.png"  Width="300" Stretch="Fill" StretchDirection="Both" Height="60"/>
+                <!-- input nombre -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Nombre:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                     </Canvas>
-                </Button>
-            </StackPanel>
+                </StackPanel>
+
+                <!-- input apellidos -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Apellidos:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input fecha nacimiento -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Fecha de naciemiento:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <DatePicker Name="fechaNaci" Height="30" FontStyle="Italic" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480" DisplayDate="2023-11-05">
+                            <DatePicker.BlackoutDates>
+                                <CalendarDateRange Start="1980-01-01" End="2023-11-05" />
+                            </DatePicker.BlackoutDates>
+                        </DatePicker>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input género -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Género:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <StackPanel Panel.ZIndex="1" Name="opGenero" Height="30" Cursor="IBeam" Background="{x:Null}" Canvas.Left="10" Orientation="Horizontal">
+                            <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Hombre</RadioButton>
+
+                            <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Mujer</RadioButton>
+
+                            <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Otro:</RadioButton>
+
+                            <TextBox Height="20" Text="Tus pronombres..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="#FF9C9C9C" Cursor="IBeam" Background="#FFF9F9F9" Panel.ZIndex="1" Canvas.Left="10" Padding="10,0" BorderThickness="2" Foreground="#FF717171"/>
+                        </StackPanel>
+
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input numero telefono -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Número de teléfono:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input nombre usuario -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Nombre de usuario:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input correo electronico -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Correo electrónico:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input contraseña-->
+                <StackPanel Margin="0,10">
+                    <Label Content="Contraseña de CreatiNation:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- input repetir contrseña -->
+                <StackPanel Margin="0,10">
+                    <Label Content="Repetir contraseña:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                    <Canvas Height="30">
+                        <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                        <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    </Canvas>
+                </StackPanel>
+
+                <!-- botón registrarme -->
+                <StackPanel Margin="0,30">
+                    <Button Width="300" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="boton_popUp_signup">
+                        <Canvas Height="60" Width="300">
+                            <Label Content="Registrarme" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="300"/>
+                            <Image Source="imgs/letrero_pintura_4_blue.png"  Width="300" Stretch="Fill" StretchDirection="Both" Height="60"/>
+                        </Canvas>
+                    </Button>
+                </StackPanel>
             
-        </StackPanel>
-    </Grid>
+            </StackPanel>
         </Grid>
+            </Grid>
 
-        <!-- Footer Simple (parte inferior fijo)-->
-        <StackPanel DockPanel.Dock="Bottom" Height="85" Orientation="Horizontal">
-            <StackPanel.Background>
-                <ImageBrush ImageSource="imgs/mancha_acuarela_6.png" Stretch="None" Opacity="0.7">
-                    <ImageBrush.RelativeTransform>
-                        <TransformGroup>
-                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="6" ScaleY="0.95"/>
-                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
-                            <RotateTransform CenterY="0.5" CenterX="0.5"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </ImageBrush.RelativeTransform>
-                </ImageBrush>
-            </StackPanel.Background>
-            <!-- Menú REDES SOCIALES-->
-            <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
-                <Image Source="imgs/icon_twitter.png" Stretch="Uniform" VerticalAlignment="Center" Height="40" Margin="10,0,5,0"/>
-                <Label Content="Twitter: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center"  FontFamily="Segoe Print"/>
+            <!-- Footer Simple (parte inferior fijo)-->
+            <StackPanel DockPanel.Dock="Bottom" Height="85" Orientation="Horizontal" VerticalAlignment="Bottom" Panel.ZIndex="1">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="imgs/mancha_acuarela_6.png" Stretch="None" Opacity="0.7">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="6" ScaleY="0.95"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </StackPanel.Background>
+                <!-- Menú REDES SOCIALES-->
+                <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
+                    <Image Source="imgs/icon_twitter.png" Stretch="Uniform" VerticalAlignment="Center" Height="40" Margin="10,0,5,0"/>
+                    <Label Content="Twitter: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center"  FontFamily="Segoe Print"/>
+                </StackPanel>
+
+                <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
+                    <Image Source="imgs/icon_instagram.png" VerticalAlignment="Center" Width="45" Margin="10,0,5,0" Stretch="UniformToFill"/>
+                    <Label Content="Instagram: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center"  FontFamily="Segoe Print"/>
+                </StackPanel>
+
+                <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
+                    <Image Source="imgs/icon_youtube.png" VerticalAlignment="Center" Width="45" Margin="10,0,5,0" Stretch="UniformToFill"/>
+                    <Label Content="Youtube: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center"  FontFamily="Segoe Print"/>
+                </StackPanel>
+
+                <StackPanel Height="60" Orientation="Horizontal" Margin="20,0,0,0" Width="364">
+                    <Image Source="imgs/icon_map_pin.png" VerticalAlignment="Top" Width="74" Margin="10,0,5,0" Height="60"/>
+                    <TextBlock Text="Calle del Conde de Peñalver, 16, 28006 Madrid, España." FontSize="14" FontFamily="Segoe Print" TextWrapping="WrapWithOverflow" Width="276" VerticalAlignment="Center" TextAlignment="Justify" Height="59"/>
+                </StackPanel>
+
             </StackPanel>
-
-            <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
-                <Image Source="imgs/icon_instagram.png" VerticalAlignment="Center" Width="45" Margin="10,0,5,0" Stretch="UniformToFill"/>
-                <Label Content="Instagram: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center"  FontFamily="Segoe Print"/>
-            </StackPanel>
-
-            <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
-                <Image Source="imgs/icon_youtube.png" VerticalAlignment="Center" Width="45" Margin="10,0,5,0" Stretch="UniformToFill"/>
-                <Label Content="Youtube: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center"  FontFamily="Segoe Print"/>
-            </StackPanel>
-
-            <StackPanel Height="60" Orientation="Horizontal" Margin="20,0,0,0" Width="364">
-                <Image Source="imgs/icon_map_pin.png" VerticalAlignment="Top" Width="74" Margin="10,0,5,0" Height="60"/>
-                <TextBlock Text="Calle del Conde de Peñalver, 16, 28006 Madrid, España." FontSize="14" FontFamily="Segoe Print" TextWrapping="WrapWithOverflow" Width="276" VerticalAlignment="Center" TextAlignment="Justify" Height="59"/>
-            </StackPanel>
-
-        </StackPanel>
-
+        </Grid>
     </DockPanel>
 </Window>
