@@ -5,10 +5,42 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="SignUpPopUp">
+     d:DesignHeight="490" d:DesignWidth="1394"
+      Title="loginForm" Background="White" ScrollViewer.VerticalScrollBarVisibility="Visible" ClipToBounds="True">
+    <!-- ClipToBounds="True"-->
 
-    <Grid>
-        
+    <Grid ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Background="White">
+
+        <!-- fondo pagina -->
+        <Image Source="imgs/deco_fondo_pintura_2.png" MaxWidth="1400" Stretch="UniformToFill"/>
+        <Canvas Width="1200">
+            <Image Source="imgs/mancha_pintura_13_blue.png" Width="1200" Opacity="0.6" Stretch="UniformToFill"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+
+        <StackPanel Width="600" Margin="0,50,0,0">
+            <!-- titulo -->
+            <StackPanel Margin="0,0,0,9">
+                <Label Content="Cuenta creada con éxito" FontFamily="Segoe UI" FontWeight="Bold" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="15" />
+                <Canvas Height="5" Background="White" Margin="0,0,0,20"/>
+            </StackPanel>
+           
+            <TextBlock FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5" TextWrapping="WrapWithOverflow" Width="600" TextAlignment="Justify" Margin="0,0,0,10" >
+                Le hemos enviado un correo electrónico para confirmar su dirección de email y darle información sobre nuestra política.
+            </TextBlock>
+
+            <TextBlock FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5" TextWrapping="WrapWithOverflow" Width="600" TextAlignment="Justify" Margin="0,0,0,10" >
+                Ya eres miembro de CreatiNation, ¡a disfrutar!
+            </TextBlock>
+
+            <!-- botón registrarme -->
+            <StackPanel Margin="0,30">
+                <Button Width="320" Height="80" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Canvas Height="80" Width="320">
+                        <Label Content="Ir al inicio del sitio" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="70" Width="320"/>
+                        <Image Source="letrero_pintura_4_blue.png"  Width="320" Stretch="Fill" StretchDirection="Both" Height="80"/>
+                    </Canvas>
+                </Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
