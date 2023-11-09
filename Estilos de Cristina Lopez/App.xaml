@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <!-- Estilos de aplicación (comunes en todas las pestañas)-->
+        <Style TargetType="TextBox">
+            <Setter Property="TextAlignment" Value="Justify"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+            <Setter Property="Cursor" Value="IBeam"/>
+            <Setter Property="Panel.ZIndex" Value="1"/>
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+            <Setter Property="Background" Value="{x:Null}"/>
+        </Style>
     </Application.Resources>
 </Application>
