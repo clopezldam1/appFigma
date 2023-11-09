@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
         mc:Ignorable="d"
         Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
-    <!-- !!!CREAR ESTILO GENREAL (DEFAULT) DE VENTANA PARA QUE AFECTE A LAS PÁGINAS-->
+    <!-- !!CREAR ESTILO GENREAL (DEFAULT) DE VENTANA PARA QUE AFECTE A LAS PÁGINAS-->
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
