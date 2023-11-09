@@ -7,7 +7,17 @@
       mc:Ignorable="d" 
         d:DesignHeight="490" d:DesignWidth="1394"  Width="1400" Height="700"
       Title="CreatiNation: Explora tu creatividad" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
-    <!-- Height="700"-->
+    <Window.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
  
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
@@ -198,7 +208,7 @@
         </Menu>
 
         <!-- Contenido de la página -->
-        <ScrollViewer VerticalAlignment="Top" DockPanel.Dock="Top" Height="493">
+        <ScrollViewer VerticalAlignment="Top" DockPanel.Dock="Top" Height="495">
             <Grid Name="contenido" Height="1018" >
 
                 <Grid Background="White" Width="1394" Panel.ZIndex="0" >
@@ -221,7 +231,7 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Nombre:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480" />
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" />
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -230,7 +240,7 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Apellidos:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -252,14 +262,11 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Género:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <StackPanel Panel.ZIndex="1" Name="opGenero" Height="30" Cursor="IBeam" Background="{x:Null}" Canvas.Left="10" Orientation="Horizontal">
-                                    <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Hombre</RadioButton>
-
-                                    <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Mujer</RadioButton>
-
-                                    <RadioButton GroupName="genero" VerticalContentAlignment="Center"  FontFamily="Segoe UI" FontSize="14" FontStyle="Italic" Padding="10,0" Margin="10,0,0,0">Otro:</RadioButton>
-
-                                    <TextBox Height="20" Text="Tus pronombres..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="#FF9C9C9C" Cursor="IBeam" Background="#FFF9F9F9" Panel.ZIndex="1" Canvas.Left="10" Padding="10,0" BorderThickness="2" Foreground="#FF717171"/>
+                                <StackPanel Panel.ZIndex="1" Name="opGenero" Height="30" Background="{x:Null}" Canvas.Left="10" Orientation="Horizontal">
+                                    <RadioButton GroupName="genero">Hombre</RadioButton>
+                                    <RadioButton GroupName="genero">Mujer</RadioButton>
+                                    <RadioButton GroupName="genero">Otro:</RadioButton>
+                                    <TextBox Height="20" Text="Tus pronombres..." BorderBrush="#FF9C9C9C"  Background="#FFF9F9F9" Canvas.Left="10" Padding="10,0" BorderThickness="2" Foreground="#FF717171" Margin="10,0,0,0" />
                                 </StackPanel>
 
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
@@ -270,7 +277,7 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Número de teléfono:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..."  Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -279,7 +286,7 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Nombre de usuario:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -288,7 +295,7 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Correo electrónico:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -306,7 +313,7 @@
                         <StackPanel Margin="0,10">
                             <Label Content="Repetir contraseña:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -329,7 +336,7 @@
         <!-- Footer Simple (parte inferior fijo)-->
         <StackPanel DockPanel.Dock="Bottom" Height="85" Orientation="Horizontal" VerticalAlignment="Bottom" Panel.ZIndex="1" Width="Auto">
             <StackPanel.Background>
-                <ImageBrush ImageSource="imgs/mancha_acuarela_6.png" Opacity="0.7">
+                <ImageBrush ImageSource="imgs/mancha_acuarela_6.png" Stretch="None"  Opacity="0.7">
                     <ImageBrush.RelativeTransform>
                         <TransformGroup>
                             <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="6" ScaleY="0.95"/>
