@@ -224,11 +224,11 @@
                             <Canvas Height="5" Background="White" Margin="0,0,0,10"/>
                         </StackPanel>
 
-                        <!-- input contraseña-->
+                        <!-- input nombre -->
                         <StackPanel>
                             <Label Content="Nombre de usuario o email:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
@@ -237,7 +237,7 @@
                         <StackPanel>
                             <Label Content="Contraseña de CreatiNation:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <Canvas Height="30">
-                                <TextBox Height="30" Text="Escribir aquí..." FontStyle="Italic" TextAlignment="Justify" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch" TextWrapping="WrapWithOverflow" BorderBrush="{x:Null}" Cursor="IBeam" Background="{x:Null}" Panel.ZIndex="1" Canvas.Left="10" Width="480"/>
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
                                 <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                             </Canvas>
                         </StackPanel>
