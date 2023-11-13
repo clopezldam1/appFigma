@@ -189,5 +189,8 @@
   <ItemGroup>
     <Resource Include="imgs\mancha_pintura_13_blue.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="tablasBD\dbo.nomTabla.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
