@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ContactForm.xaml.cs">
+      <DependentUpon>ContactForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="homePage.xaml.cs">
       <DependentUpon>homePage.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,10 @@
     <Compile Include="SignUpPopUp.xaml.cs">
       <DependentUpon>SignUpPopUp.xaml</DependentUpon>
     </Compile>
+    <Page Include="ContactForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="homePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -190,7 +197,8 @@
     <Resource Include="imgs\mancha_pintura_13_blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="tablasBD\dbo.nomTabla.sql" />
+    <Content Include="BBDD\dbo.nomTabla.sql" />
+    <Resource Include="imgs\deco_fondo_pintura_5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
