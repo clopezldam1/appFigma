@@ -85,6 +85,12 @@
     <Compile Include="Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\IndexButton.xaml.cs">
+      <DependentUpon>IndexButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\IndexCard.xaml.cs">
+      <DependentUpon>IndexCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.xaml.cs">
       <DependentUpon>loginForm.xaml</DependentUpon>
     </Compile>
@@ -137,6 +143,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\IndexButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\IndexCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

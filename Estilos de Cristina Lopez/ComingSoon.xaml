@@ -4,9 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
-        mc:Ignorable="d"
-        Title="ComingSoon" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+      xmlns:uc="clr-namespace:Estilos_de_Cristina_Lopez"
+        mc:Ignorable="d" 
+        d:DesignHeight="490" d:DesignWidth="1394"
+        Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <DockPanel>
+        <!-- Banner (parte superior TOP)-->
+        <uc:Banner DockPanel.Dock="Top"/>
+
+        <!-- NavBar (parte superior BOTTOM)-->
+        <uc:NavBar DockPanel.Dock="Top"/>
+        <!-- Contenido de la página -->
+        <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
+            <StackPanel AllowDrop="True" Background="White" Width="1394">
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer Simple (parte inferior fijo)-->
+        <uc:FooterSimple DockPanel.Dock="Bottom" Background="#FF8ECDA8" />
+
+    </DockPanel>
 </Window>
