@@ -85,11 +85,23 @@
     <Compile Include="Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\IndexButton.xaml.cs">
-      <DependentUpon>IndexButton.xaml</DependentUpon>
+    <Compile Include="IndexCardAcademy.xaml.cs">
+      <DependentUpon>IndexCardAcademy.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\IndexCard.xaml.cs">
-      <DependentUpon>IndexCard.xaml</DependentUpon>
+    <Compile Include="IndexCardAccount.xaml.cs">
+      <DependentUpon>IndexCardAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndexCardNation.xaml.cs">
+      <DependentUpon>IndexCardNation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndexCardQna.xaml.cs">
+      <DependentUpon>IndexCardQna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndexCardShop.xaml.cs">
+      <DependentUpon>IndexCardShop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndexCardTutorial.xaml.cs">
+      <DependentUpon>IndexCardTutorial.xaml</DependentUpon>
     </Compile>
     <Compile Include="loginForm.xaml.cs">
       <DependentUpon>loginForm.xaml</DependentUpon>
@@ -146,11 +158,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\IndexButton.xaml">
+    <Page Include="IndexCardAcademy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\IndexCard.xaml">
+    <Page Include="IndexCardAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IndexCardNation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IndexCardQna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IndexCardShop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IndexCardTutorial.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -282,6 +310,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BBDD\dbo.nomTabla.sql" />
+    <Resource Include="imgs\letrero_pintura_4_green.png" />
     <Resource Include="imgs\letrero_pintura_4_yellow.png" />
     <Resource Include="imgs\deco_fondo_pintura_5.png" />
   </ItemGroup>

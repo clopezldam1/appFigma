@@ -10,21 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Estilos_de_Cristina_Lopez
 {
     /// <summary>
-    /// Lógica de interacción para Index.xaml
+    /// Lógica de interacción para IndexCardAcademy.xaml
     /// </summary>
-    public partial class Index : Window
+    public partial class IndexCardAcademy : UserControl
     {
-        public Index()
+        public IndexCardAcademy()
         {
             InitializeComponent();
         }
 
-        private void IndexCardNation_Loaded(object sender, RoutedEventArgs e)
+        private void goto_ComingSoon(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void goto_ContactFormAcademy(object sender, RoutedEventArgs e)
         {
 
         }

@@ -13,16 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Estilos_de_Cristina_Lopez.UserControls
+namespace Estilos_de_Cristina_Lopez
 {
     /// <summary>
-    /// Lógica de interacción para IndexButton.xaml
+    /// Lógica de interacción para IndexCardQna.xaml
     /// </summary>
-    public partial class IndexButton : UserControl
+    public partial class IndexCardQna : UserControl
     {
-        public IndexButton()
+        public IndexCardQna()
         {
             InitializeComponent();
+        }
+
+        private void goto_ComingSoon(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

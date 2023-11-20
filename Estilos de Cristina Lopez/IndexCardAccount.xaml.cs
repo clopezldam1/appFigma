@@ -10,21 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Estilos_de_Cristina_Lopez
 {
     /// <summary>
-    /// Lógica de interacción para Index.xaml
+    /// Lógica de interacción para IndexCardAccount.xaml
     /// </summary>
-    public partial class Index : Window
+    public partial class IndexCardAccount : UserControl
     {
-        public Index()
+        public IndexCardAccount()
         {
             InitializeComponent();
         }
 
-        private void IndexCardNation_Loaded(object sender, RoutedEventArgs e)
+        private void goto_ComingSoon(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void goto_LogOutPopUp(object sender, RoutedEventArgs e)
         {
 
         }

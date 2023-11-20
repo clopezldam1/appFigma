@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace Estilos_de_Cristina_Lopez
 {
     /// <summary>
-    /// Lógica de interacción para IndexCard.xaml
+    /// Lógica de interacción para IndexCardShop.xaml
     /// </summary>
-    public partial class IndexCard : UserControl
+    public partial class IndexCardShop : UserControl
     {
-        public IndexCard()
+        public IndexCardShop()
         {
             InitializeComponent();
+        }
+
+        private void goto_ComingSoon(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

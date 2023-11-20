@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
-      xmlns:uc="clr-namespace:Estilos_de_Cristina_Lopez"
+         xmlns:uc="clr-namespace:Estilos_de_Cristina_Lopez"
         mc:Ignorable="d" 
         d:DesignHeight="490" d:DesignWidth="1394"
         Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
@@ -14,12 +14,28 @@
 
         <!-- NavBar (parte superior BOTTOM)-->
         <uc:NavBar DockPanel.Dock="Top"/>
-
+        
         <!-- Contenido de la página -->
         <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
-            <StackPanel AllowDrop="True" Background="White" Width="1394">
 
-            </StackPanel>
+            <Canvas>
+                <!-- Fondo pagina-->
+                <Image Source="imgs/deco_fondo_pintura_2.png" MaxWidth="1400" Stretch="UniformToFill" StretchDirection="Both"/>
+
+                <StackPanel AllowDrop="True" Background="White" Width="1394">
+                    <StackPanel Orientation="Horizontal">
+                    <uc:IndexCardNation Margin="20" Loaded="IndexCardNation_Loaded"/>
+                    <uc:IndexCardAcademy Margin="20"/>
+                    <uc:IndexCardShop  Margin="20"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <uc:IndexCardTutorial  Margin="20"/>
+                    <uc:IndexCardQna Margin="20"/>
+                    <uc:IndexCardAccount Margin="20"/>
+                </StackPanel>
+                </StackPanel>
+            </Canvas>
+           
         </ScrollViewer>
 
         <!-- Footer Simple (parte inferior fijo)-->
