@@ -55,14 +55,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AboutUs.xaml.cs">
+      <DependentUpon>AboutUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Banner.xaml.cs">
       <DependentUpon>Banner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComingSoon.xaml.cs">
+      <DependentUpon>ComingSoon.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContactForm.xaml.cs">
       <DependentUpon>ContactForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactFormAcademy.xaml.cs">
+      <DependentUpon>ContactFormAcademy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ContactPopUp.xaml.cs">
       <DependentUpon>ContactPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactPopUpAcademy.xaml.cs">
+      <DependentUpon>ContactPopUpAcademy.xaml</DependentUpon>
     </Compile>
     <Compile Include="FooterSimple.xaml.cs">
       <DependentUpon>FooterSimple.xaml</DependentUpon>
@@ -70,8 +82,14 @@
     <Compile Include="homePage.xaml.cs">
       <DependentUpon>homePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.xaml.cs">
       <DependentUpon>loginForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogOutPopUp.xaml.cs">
+      <DependentUpon>LogOutPopUp.xaml</DependentUpon>
     </Compile>
     <Compile Include="NavBar.xaml.cs">
       <DependentUpon>NavBar.xaml</DependentUpon>
@@ -82,7 +100,15 @@
     <Compile Include="SignUpPopUp.xaml.cs">
       <DependentUpon>SignUpPopUp.xaml</DependentUpon>
     </Compile>
+    <Page Include="AboutUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Banner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ComingSoon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,7 +116,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ContactFormAcademy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ContactPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContactPopUpAcademy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,6 +136,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="loginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -110,6 +148,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="LogOutPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NavBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

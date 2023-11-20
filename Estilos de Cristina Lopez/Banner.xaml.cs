@@ -32,12 +32,16 @@ namespace Estilos_de_Cristina_Lopez
 
         private void goto_Home(object sender, RoutedEventArgs e)
         {
-
+            homePage home = new homePage();
+            Window.GetWindow(this).Close();
+            home.Show();
         }
 
         private void goto_Index(object sender, RoutedEventArgs e)
         {
-
+            Index index = new Index();
+            Window.GetWindow(this).Close();
+            index.Show();
         }
 
         private void goto_AboutUs(object sender, RoutedEventArgs e)
