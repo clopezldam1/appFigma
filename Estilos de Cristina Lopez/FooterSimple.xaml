@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="Estilos_de_Cristina_Lopez.FooterSimple"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
+             mc:Ignorable="d" 
+             d:DesignHeight="85" d:DesignWidth="1394">
+    
+    <StackPanel Height="85" Orientation="Horizontal" VerticalAlignment="Bottom" Width="Auto">
+        <StackPanel.Background>
+            <ImageBrush ImageSource="imgs/mancha_acuarela_6.png" Stretch="None" TileMode="Tile">
+                <ImageBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="6" ScaleY="0.95"/>
+                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                        <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </StackPanel.Background>
+        <!-- Menú REDES SOCIALES-->
+        <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
+            <Image Source="imgs/icon_twitter.png" Stretch="Uniform" VerticalAlignment="Center" Height="40" Margin="10,0,5,0"/>
+            <Label Content="Twitter: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center" FontWeight="Bold"  FontFamily="Segoe Print"/>
+        </StackPanel>
+
+        <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
+            <Image Source="imgs/icon_instagram.png" VerticalAlignment="Center" Width="45" Margin="10,0,5,0" Stretch="UniformToFill"/>
+            <Label Content="Instagram: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center" FontWeight="Bold"  FontFamily="Segoe Print"/>
+        </StackPanel>
+
+        <StackPanel Height="40" Orientation="Horizontal" Margin="20,0,0,0">
+            <Image Source="imgs/icon_youtube.png" VerticalAlignment="Center" Width="45" Margin="10,0,5,0" Stretch="UniformToFill"/>
+            <Label Content="Youtube: @creatination" FontStretch="ExtraCondensed" FontSize="20" VerticalAlignment="Center" FontWeight="Bold"  FontFamily="Segoe Print"/>
+        </StackPanel>
+
+        <StackPanel Height="60" Orientation="Horizontal" Margin="20,0,0,0" Width="364">
+            <Image Source="imgs/icon_map_pin.png" VerticalAlignment="Top" Width="74" Margin="10,0,5,0" Height="60"/>
+            <TextBlock Text="Calle del Conde de Peñalver, 16, 28006 Madrid, España." FontSize="14" FontFamily="Segoe Print" FontWeight="Bold" TextWrapping="WrapWithOverflow" Width="276" VerticalAlignment="Center" TextAlignment="Justify" Height="59"/>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

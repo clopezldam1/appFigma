@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Estilos_de_Cristina_Lopez
 {
     /// <summary>
-    /// Lógica de interacción para SignUpPopUp.xaml
+    /// Lógica de interacción para FooterSimple.xaml
     /// </summary>
-    public partial class SignUpPopUp : Window
+    public partial class FooterSimple : UserControl
     {
-        public SignUpPopUp()
+        public FooterSimple()
         {
             InitializeComponent();
-        }
-
-        private void goto_Home(object sender, RoutedEventArgs e)
-        {
-            homePage home = new homePage();
-            this.Close();
-            home.Show();
         }
     }
 }
