@@ -38,5 +38,12 @@ namespace Estilos_de_Cristina_Lopez
             this.Close();
             home.Show();
         }
+
+        private void goto_ContactForm(object sender, RoutedEventArgs e)
+        {
+            ContactForm contactForm = new ContactForm();
+            this.Close();
+            contactForm.Show();
+        }
     }
 }

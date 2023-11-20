@@ -15,22 +15,14 @@ using System.Windows.Shapes;
 namespace Estilos_de_Cristina_Lopez
 {
     /// <summary>
-    /// Lógica de interacción para ContactForm.xaml
+    /// Lógica de interacción para ContactPopUp.xaml
     /// </summary>
-    public partial class ContactForm : Window
+    public partial class ContactPopUp : Window
     {
-        public ContactForm()
+        public ContactPopUp()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
-
-        private void Boton_popUp_contact(object sender, RoutedEventArgs e)
-        {
-            ContactPopUp popUpContact = new ContactPopUp();
-            this.Close();
-            popUpContact.Show();
-        }
-
         private void boton_home(object sender, RoutedEventArgs e)
         {
 
@@ -38,7 +30,7 @@ namespace Estilos_de_Cristina_Lopez
 
         private void clearTextBox(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }

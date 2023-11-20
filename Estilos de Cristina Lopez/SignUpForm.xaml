@@ -221,6 +221,8 @@
                     </Canvas>
 
                     <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Center">
+                      
+                        
                         <!-- titulo form -->
                         <StackPanel>
                             <Label Content="CREAR CUENTA" FontFamily="Segoe UI Black" FontWeight="Bold" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="15" />

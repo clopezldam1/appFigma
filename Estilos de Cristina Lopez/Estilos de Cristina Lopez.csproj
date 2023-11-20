@@ -58,6 +58,9 @@
     <Compile Include="ContactForm.xaml.cs">
       <DependentUpon>ContactForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactPopUp.xaml.cs">
+      <DependentUpon>ContactPopUp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="homePage.xaml.cs">
       <DependentUpon>homePage.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
       <DependentUpon>SignUpPopUp.xaml</DependentUpon>
     </Compile>
     <Page Include="ContactForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContactPopUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -198,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BBDD\dbo.nomTabla.sql" />
+    <Resource Include="imgs\letrero_pintura_4_yellow.png" />
     <Resource Include="imgs\deco_fondo_pintura_5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
