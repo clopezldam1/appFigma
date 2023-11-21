@@ -7,7 +7,19 @@
        xmlns:uc="clr-namespace:Estilos_de_Cristina_Lopez"
         mc:Ignorable="d" 
         d:DesignHeight="490" d:DesignWidth="1394"
-        Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
+    <Window.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
         <uc:Banner DockPanel.Dock="Top"/>
@@ -16,11 +28,143 @@
         <uc:NavBar DockPanel.Dock="Top"/>
 
         <!-- Contenido de la página -->
-        <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
-            <StackPanel AllowDrop="True" Background="White" Width="1394">
+        <ScrollViewer Height="490" VerticalAlignment="Top" DockPanel.Dock="Top" >
+            <Grid Name="contenido" Height="Auto">
 
-            </StackPanel>
+                <Grid Background="White" Width="1394" Panel.ZIndex="0" >
+
+                    <Canvas>
+                        <Image Source="imgs/deco_fondo_general-1.png" Stretch="Fill" Panel.ZIndex="1" Width="1400">
+                            <Image.Effect>
+                                <BlurEffect KernelType="Box"/>
+                            </Image.Effect>
+                        </Image>
+                    </Canvas>
+
+                    <Rectangle Height="984" Width="530" RadiusX="30" RadiusY="30" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="1" Margin="40" Stroke="#FF383838" StrokeStartLineCap="Triangle" RenderTransformOrigin="0.501,0.55" StrokeThickness="4">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="#FFEDE38C" Opacity="0.6"/>
+                        </Rectangle.Fill>
+                        <Rectangle.Effect>
+                            <BlurEffect Radius="200" KernelType="Gaussian"/>
+                        </Rectangle.Effect>
+                    </Rectangle>
+
+                    <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Center" Margin="40" Panel.ZIndex="2">
+
+                        <!-- titulo form -->
+                        <StackPanel>
+                            <Label Content="Contacta con nosotros" FontFamily="Segoe UI" FontWeight="Bold" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" Padding="15" />
+                            <Canvas Height="5" Background="Black" Margin="0,0,0,20"/>
+                        </StackPanel>
+
+                        <!-- input nombre y apellidos -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Nombre y apellidos: *" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True" GotFocus="clearTextBox"/>
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input correo electronico -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Correo electrónico: *" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True" GotFocus="clearTextBox"/>
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- tlf contacto -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Teléfono de contacto: *" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True" GotFocus="clearTextBox"/>
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input Departamento -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Departamento con el que quiere contactar:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <TextBox Height="30" Text="Ej. tienda física, tienda online, foro, tutoriales, clases, talleres ...etc." Canvas.Left="10" Width="480" GotFocus="clearTextBox"/>
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input numero telefono -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Número de teléfono:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <TextBox Height="30" Text="Escribir aquí..."  Canvas.Left="10" Width="480" GotFocus="clearTextBox"/>
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input asunto -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Asunto: *" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="60">
+                                <TextBox Height="60" Text="Describa brevemente el motivo de su consulta..." Canvas.Left="10" Width="480" TextWrapping="WrapWithOverflow" AutomationProperties.IsRequiredForForm="True" GotFocus="clearTextBox"/>
+                                <Rectangle Height="60" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input Mensaje -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="Mensaje:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="120">
+                                <TextBox Height="120" Text="Describa su consulta con más detalle..." Canvas.Left="10" Width="480"  VerticalScrollBarVisibility="Visible" TextWrapping="WrapWithOverflow" GotFocus="clearTextBox"/>
+                                <Rectangle Height="120" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input SendCopy -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="¿Desaea recibir una copia de este formulario?: *" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <StackPanel Panel.ZIndex="1" Name="opCopiaForm" Height="30" Background="{x:Null}" Canvas.Left="10" Orientation="Horizontal">
+                                    <RadioButton GroupName="sendCopyForm" >Sí</RadioButton>
+                                    <RadioButton GroupName="sendCopyForm">No</RadioButton>
+                                    <Label Height="20" Content="(La copia se enviará al correo electrónico que has introducido)" BorderBrush="#FF9C9C9C"  Canvas.Left="10" Padding="10,0" Margin="30,0,0,0" Foreground="Gray" FontStyle="Italic"/>
+                                </StackPanel>
+
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- input MessageBack -->
+                        <StackPanel Margin="0,10">
+                            <Label Content="¿Desaea que contactemos con usted personalmente?: *" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="18" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
+                            <Canvas Height="30">
+                                <StackPanel Panel.ZIndex="1" Name="opMssBack" Height="30" Background="{x:Null}" Canvas.Left="10" Orientation="Horizontal">
+                                    <RadioButton GroupName="replyBack">Sí</RadioButton>
+                                    <RadioButton GroupName="replyBack">No</RadioButton>
+
+                                    <Label Height="20" Content="(Le contactaremos a través de WhatsApp)" BorderBrush="#FF9C9C9C"  Canvas.Left="10" Padding="10,0" Margin="30,0,0,0" Foreground="Gray" FontStyle="Italic"/>
+                                </StackPanel>
+
+                                <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                            </Canvas>
+                        </StackPanel>
+
+                        <!-- botón enviar -->
+                        <StackPanel Margin="0,30">
+                            <Button Width="300" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_ContactPopUpAcademy">
+                                <Canvas Height="60" Width="300">
+                                    <Label Content="Registrarme" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="300"/>
+                                    <Image Source="imgs/letrero_pintura_4_yellow.png"  Width="300" Stretch="Fill" StretchDirection="Both" Height="60"/>
+                                </Canvas>
+                            </Button>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+            </Grid>
         </ScrollViewer>
+
 
         <!-- Footer Simple (parte inferior fijo)-->
         <uc:FooterSimple DockPanel.Dock="Bottom" Background="#FF8ECDA8" />

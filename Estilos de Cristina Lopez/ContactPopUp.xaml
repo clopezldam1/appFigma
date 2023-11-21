@@ -19,13 +19,13 @@
         <!-- Contenido de la página -->
         <Grid Name="contenido" Height="495" VerticalAlignment="Top" DockPanel.Dock="Top" ClipToBounds="True">
             <Canvas>
-                <Image Source="imgs/mancha_acuarela_3.png" Stretch="Fill" Panel.ZIndex="1" Width="1400">
+                <Image Source="imgs/mancha_acuarela_3.png" Stretch="UniformToFill" Panel.ZIndex="1"  Width="1400" Height="1314" Canvas.Top="-370">
                     <Image.Effect>
                         <BlurEffect KernelType="Box"/>
                     </Image.Effect>
                 </Image>
 
-                <Image Source="imgs/costura_boton-2.png" Opacity="0.6" Panel.ZIndex="3" Width="1400" Stretch="Fill"/>
+                <Image Source="imgs/costura_boton-2.png" Opacity="0.7" Panel.ZIndex="3" Width="1400" Stretch="Fill"/>
             </Canvas>
 
             <StackPanel Width="600" Margin="0,50,0,0" Panel.ZIndex="1">
@@ -56,10 +56,10 @@
 
             <Rectangle Height="390" Width="660" RadiusX="30" RadiusY="30" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="0" Margin="40" StrokeStartLineCap="Triangle" RenderTransformOrigin="0.501,0.55">
                 <Rectangle.Fill>
-                    <SolidColorBrush Color="White" Opacity="0.4"/>
+                    <SolidColorBrush Color="White" Opacity="0.6"/>
                 </Rectangle.Fill>
                 <Rectangle.Effect>
-                    <DropShadowEffect ShadowDepth="1" BlurRadius="30" Color="#FFFFCCCC" Opacity="0.09"/>
+                    <BlurEffect Radius="100"/>
                 </Rectangle.Effect>
             </Rectangle>
 

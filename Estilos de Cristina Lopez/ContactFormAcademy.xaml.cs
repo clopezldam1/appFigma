@@ -23,5 +23,17 @@ namespace Estilos_de_Cristina_Lopez
         {
             InitializeComponent();
         }
+
+        private void clearTextBox(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void goto_ContactPopUpAcademy(object sender, RoutedEventArgs e)
+        {
+            ContactPopUp popUpContact = new ContactPopUp();
+            this.Close();
+            popUpContact.Show();
+        }
     }
 }

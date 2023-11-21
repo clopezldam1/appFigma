@@ -44,9 +44,9 @@ Gracias por confiar en CreatiAcademy.
                 <StackPanel Margin="0,30">
                     <Button Width="320" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_Home">
                         <Canvas Height="80" Width="320">
-                            <Label Content="Volver a la página principal" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="60" Width="320"/>
+                            <Label Content="Volver a la página principal" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="60" Width="320"/>
 
-                            <Rectangle Width="320" Height="60" RadiusX="20" RadiusY="20" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="0" StrokeStartLineCap="Triangle">
+                            <Rectangle Width="320" Height="60" RadiusX="20" RadiusY="20" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="1" StrokeStartLineCap="Triangle">
                                 <Rectangle.Fill>
                                     <SolidColorBrush Color="#FFC59B3B" Opacity="0.6"/>
                                 </Rectangle.Fill>
@@ -61,10 +61,10 @@ Gracias por confiar en CreatiAcademy.
 
             <Rectangle Height="390" Width="660" RadiusX="30" RadiusY="30" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="0" Margin="40" StrokeStartLineCap="Triangle" RenderTransformOrigin="0.501,0.55">
                 <Rectangle.Fill>
-                    <SolidColorBrush Color="#FFF5E9CD" Opacity="0.6"/>
+                    <SolidColorBrush Color="#FFEDE38C" Opacity="0.6"/>
                 </Rectangle.Fill>
                 <Rectangle.Effect>
-                    <DropShadowEffect ShadowDepth="1" BlurRadius="30" Color="#FFFFCCCC" Opacity="0.09"/>
+                    <BlurEffect Radius="200" KernelType="Gaussian"/>
                 </Rectangle.Effect>
             </Rectangle>
 
