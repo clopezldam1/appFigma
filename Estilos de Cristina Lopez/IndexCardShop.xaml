@@ -27,7 +27,7 @@
             <StackPanel Orientation="Vertical">
                 <StackPanel.Resources>
                     <Style TargetType="Label">
-                        <Setter Property="Width" Value="320"/>
+
                         <Setter Property="FontFamily" Value="Segoe Print"/>
                         <Setter Property="VerticalAlignment" Value="Center"/>
                         <Setter Property="FontSize" Value="25"/>
@@ -35,9 +35,13 @@
                         <Setter Property="Margin" Value="10,0,0,10"/>
                         <Setter Property="HorizontalAlignment" Value="Left"/>
                     </Style>
+                    <Style TargetType="Button">
+                        <Setter Property="BorderBrush" Value="{x:Null}"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
                 </StackPanel.Resources>
 
-                <Button Margin="0,10" Height="90" Click="goto_ComingSoon">
+                <Button Margin="0,10" Height="90" Click="goto_ComingSoon" HorizontalContentAlignment="Center">
                     <Button.Background>
                         <ImageBrush ImageSource="imgs/letrero_pintura_4_green.png" Opacity="0.4" />
                     </Button.Background>

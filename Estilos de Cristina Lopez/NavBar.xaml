@@ -15,25 +15,25 @@
                 <ImageBrush ImageSource="imgs/mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
             </MenuItem.Background>
 
-            <MenuItem Header="Sobre nosotros" FontSize="14">
+            <MenuItem Header="Sobre nosotros" FontSize="14" Click="goto_AboutUs">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
 
-            <MenuItem Header="Tienda física" FontSize="14">
+            <MenuItem Header="Tienda física" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
 
-            <MenuItem Header="Galería de imágenes" FontSize="14">
+            <MenuItem Header="Galería de imágenes" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
 
-            <MenuItem Header="Contacto tienda" FontSize="14">
+            <MenuItem Header="Contacto tienda" FontSize="14" Click="goto_ContactForm">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
@@ -46,28 +46,28 @@
                 <ImageBrush ImageSource="imgs/mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
             </MenuItem.Background>
 
-            <MenuItem Header="Clases carpintería" FontSize="14">
+            <MenuItem Header="Clases carpintería" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
 
-            <MenuItem Header="Clases escultura goma eva" FontSize="14">
+            <MenuItem Header="Clases escultura goma eva" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Clases artes plásticas" FontSize="14">
+            <MenuItem Header="Clases artes plásticas" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Calendario talleres" FontSize="14">
+            <MenuItem Header="Calendario talleres" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Contacto clases/talleres" FontSize="14">
+            <MenuItem Header="Contacto clases/talleres" FontSize="14" Click="goto_ContactFormAcademy">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
@@ -80,22 +80,22 @@
                 <ImageBrush ImageSource="imgs/mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
             </MenuItem.Background>
 
-            <MenuItem Header="Comisiones" FontSize="14">
+            <MenuItem Header="Comisiones" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Reseñas" FontSize="14">
+            <MenuItem Header="Reseñas" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Galería productos" FontSize="14">
+            <MenuItem Header="Galería productos" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Contacto comisiones" FontSize="14">
+            <MenuItem Header="Contacto comisiones" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
@@ -108,27 +108,27 @@
                 <ImageBrush ImageSource="imgs/mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
             </MenuItem.Background>
 
-            <MenuItem Header="Arte y manualidades" FontSize="14">
+            <MenuItem Header="Arte y manualidades" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Cosplay y disfraces" FontSize="14">
+            <MenuItem Header="Cosplay y disfraces" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Otras categorías" FontSize="14">
+            <MenuItem Header="Otras categorías" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Listas de reproducción" FontSize="14">
+            <MenuItem Header="Listas de reproducción" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Contacto tutoriales" FontSize="14">
+            <MenuItem Header="Contacto tutoriales" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
@@ -141,17 +141,17 @@
                 <ImageBrush ImageSource="imgs/mancha_acuarela_1.png" Opacity="0.5" Stretch="None" TileMode="FlipX"/>
             </MenuItem.Background>
 
-            <MenuItem Header="Leer foros" FontSize="14">
+            <MenuItem Header="Leer foros" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Mis preguntas" FontSize="14">
+            <MenuItem Header="Mis preguntas" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>
             </MenuItem>
-            <MenuItem Header="Mis contribuciones" FontSize="14">
+            <MenuItem Header="Mis contribuciones" FontSize="14" Click="goto_ComingSoon">
                 <MenuItem.Background>
                     <ImageBrush Stretch="None" ImageSource="imgs/mancha_acuarela_5.png"/>
                 </MenuItem.Background>

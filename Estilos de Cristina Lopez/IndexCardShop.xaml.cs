@@ -27,7 +27,9 @@ namespace Estilos_de_Cristina_Lopez
 
         private void goto_ComingSoon(object sender, RoutedEventArgs e)
         {
-
+            ComingSoon newWindow = new ComingSoon();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
         }
     }
 }

@@ -27,12 +27,16 @@ namespace Estilos_de_Cristina_Lopez
 
         private void goto_ComingSoon(object sender, RoutedEventArgs e)
         {
-
+            ComingSoon newWindow = new ComingSoon();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
         }
 
         private void goto_ContactFormAcademy(object sender, RoutedEventArgs e)
         {
-
+            ContactFormAcademy newWindow = new ContactFormAcademy();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
         }
     }
 }

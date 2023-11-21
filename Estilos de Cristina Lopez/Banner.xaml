@@ -32,7 +32,7 @@
         </Button>
 
         <!-- Menú button ACCOUNT-->
-        <Button Width="184" BorderBrush="{x:Null}" Background="{x:Null}" Click="goto_Account">
+        <Button Width="184" BorderBrush="{x:Null}" Background="{x:Null}" Click="goto_ComingSoon">
             <StackPanel Height="50" >
                 <Image Source="imgs/icon_account.png" Stretch="Uniform" Height="30"/>
                 <Label Content="Área cliente" Background="{x:Null}" BorderBrush="{x:Null}"/>

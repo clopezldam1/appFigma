@@ -24,5 +24,33 @@ namespace Estilos_de_Cristina_Lopez
         {
             InitializeComponent();
         }
+
+        private void goto_AboutUs(object sender, RoutedEventArgs e)
+        {
+            AboutUs newWindow = new AboutUs();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
+        }
+
+        private void goto_ComingSoon(object sender, RoutedEventArgs e)
+        {
+            ComingSoon newWindow = new ComingSoon();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
+        }
+
+        private void goto_ContactForm(object sender, RoutedEventArgs e)
+        {
+            ContactForm newWindow = new ContactForm();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
+        }
+
+        private void goto_ContactFormAcademy(object sender, RoutedEventArgs e)
+        {
+            ContactFormAcademy newWindow = new ContactFormAcademy();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
+        }
     }
 }

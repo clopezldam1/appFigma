@@ -18,23 +18,25 @@
         <!-- Contenido de la página -->
         <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
 
-            <Canvas>
+            <Grid>
                 <!-- Fondo pagina-->
-                <Image Source="imgs/deco_fondo_pintura_2.png" MaxWidth="1400" Stretch="UniformToFill" StretchDirection="Both"/>
+                <Image Source="imgs/deco_fondo_pintura_2.png" Width="1400" Stretch="UniformToFill" StretchDirection="Both"/>
 
-                <StackPanel AllowDrop="True" Background="White" Width="1394">
-                    <StackPanel Orientation="Horizontal">
-                    <uc:IndexCardNation Margin="20" Loaded="IndexCardNation_Loaded"/>
-                    <uc:IndexCardAcademy Margin="20"/>
-                    <uc:IndexCardShop  Margin="20"/>
+                <StackPanel AllowDrop="True"  Width="1374">
+                   
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <uc:IndexCardNation Margin="0,20,20,20" Width="424"/>
+                    <uc:IndexCardAcademy Margin="20" Width="424"/>
+                        <uc:IndexCardShop  Margin="20,20,0,20" Width="424"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <uc:IndexCardTutorial  Margin="0,20,20,20" Width="424"/>
+                        <uc:IndexCardQna Margin="20" Width="424"/>
+                        <uc:IndexCardAccount Margin="20,20,0,20" Width="424"/>
+                    </StackPanel>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <uc:IndexCardTutorial  Margin="20"/>
-                    <uc:IndexCardQna Margin="20"/>
-                    <uc:IndexCardAccount Margin="20"/>
-                </StackPanel>
-                </StackPanel>
-            </Canvas>
+            </Grid>
            
         </ScrollViewer>
 
