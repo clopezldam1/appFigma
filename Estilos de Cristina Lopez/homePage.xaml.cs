@@ -25,11 +25,18 @@ namespace Estilos_de_Cristina_Lopez
             InitializeComponent();
         }
 
-        private void boton_home(object sender, RoutedEventArgs e)
+        private void goto_AboutUs(object sender, RoutedEventArgs e)
         {
-            homePage home = new homePage();
+            AboutUs about = new AboutUs();
             this.Close();
-            home.Show();
+            about.Show();
+        }
+
+        private void goto_ComingSoon(object sender, RoutedEventArgs e)
+        {
+            ComingSoon newWindow = new ComingSoon();
+            Window.GetWindow(this).Close();
+            newWindow.Show();
         }
     }
 }

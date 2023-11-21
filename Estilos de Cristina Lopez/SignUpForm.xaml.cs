@@ -38,10 +38,5 @@ namespace Estilos_de_Cristina_Lopez
             this.Close();
             signUpPopUp.Show();
         }
-
-        private void TextBox_TextChanged()
-        {
-
-        }
     }
 }

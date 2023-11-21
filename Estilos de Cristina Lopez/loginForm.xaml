@@ -47,7 +47,7 @@
                                 <StackPanel>
                                     <Label Content="Nombre de usuario o email:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                                     <Canvas Height="30">
-                                        <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
+                                        <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True"/>
                                         <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                                     </Canvas>
                                 </StackPanel>
@@ -56,14 +56,14 @@
                                 <StackPanel>
                                     <Label Content="Contraseña de CreatiNation:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                                     <Canvas Height="30">
-                                        <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480"/>
+                                        <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True"/>
                                         <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                                     </Canvas>
                                 </StackPanel>
 
                                 <!-- botón Entrar -->
                                 <StackPanel Margin="0,15">
-                                    <Button Width="300" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Click="boton_home">
+                                    <Button Width="300" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_Home">
                                         <Canvas Height="60" Width="300">
                                             <Label Content="Entrar" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="300"/>
                                             <Image Source="imgs/letrero_pintura_4_salmon.png"  Width="300" Stretch="Fill" StretchDirection="Both" Height="40"/>
@@ -78,7 +78,7 @@
                             <Label Content="¿No tienes cuenta?" FontFamily="Segoe UI" FontWeight="Bold"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                             <!-- botón registrarme -->
                             <StackPanel>
-                                <Button Width="300" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="30,0,0,0" Click="boton_signUp">
+                                <Button Width="300" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="30,0,0,0" Click="goto_SignUpForm">
                                     <Canvas Height="60" Width="300">
                                         <Label Content="Registrarme" FontFamily="Segoe UI"   FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="40" Width="300"/>
                                         <Rectangle Height="40" Width="300" RadiusX="10" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left">
@@ -99,14 +99,14 @@
                         <Canvas Height="4" Background="#FFA2A2A2" Margin="0,0,0,10" Width="400"/>
 
                         <!-- login as guest -->
-                        <Button Width="250" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="30,0,0,0" Click="boton_home">
+                        <Button Width="250" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Margin="30,0,0,0" Click="goto_Home">
                             <Label Content="Continuar como invitado" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF909090" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="250" FontStyle="Italic"/>
                         </Button>
                     </StackPanel>
 
                     <!-- imagen logotipo, mitad derecha-->
                     <Canvas Height="490" Width="600">
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Top="125" Click="boton_home">
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Canvas.Top="125" Click="goto_Home">
                             <Image Source="imgs/logo_letras_provisional-removebg-preview.png" MaxWidth="590" Stretch="UniformToFill" />
                         </Button>
                     </Canvas>

@@ -28,7 +28,7 @@
                 <StackPanel>
                     <!-- imagen logotipo-->
                     <Canvas Height="124" Width="250">
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Click="boton_home">
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_AboutUs">
                             <Image Source="imgs/logo_letras_provisional-removebg-preview.png" MaxWidth="250" Stretch="UniformToFill" Margin="0,10,0,0" />
                         </Button>
                     </Canvas>
@@ -37,7 +37,7 @@
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 
                         <!-- tarjeta nation-->
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" >
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" Click="goto_AboutUs">
                             <Grid Width="270" Height="140">
                                 <StackPanel Width="250" Panel.ZIndex="1">
                                     <!-- titulo card -->
@@ -55,7 +55,7 @@
                         </Button>
 
                         <!-- tarjeta academy-->
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" >
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" Click="goto_ComingSoon">
                             <Grid Width="270" Height="140">
                                 <StackPanel Width="250" Panel.ZIndex="1">
                                     <!-- titulo card -->
@@ -73,7 +73,7 @@
                         </Button>
 
                         <!-- tarjeta Shop-->
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" >
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" Click="goto_ComingSoon">
                             <Grid Width="270" Height="140">
                                 <StackPanel Width="250" Panel.ZIndex="1">
                                     <!-- titulo card -->
@@ -96,7 +96,7 @@
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 
                         <!-- tarjeta tutorial-->
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" >
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" Click="goto_ComingSoon">
                             <Grid Width="270" Height="140">
                                 <StackPanel Width="250" Panel.ZIndex="1">
                                     <!-- titulo card -->
@@ -114,7 +114,7 @@
                         </Button>
 
                         <!-- tarjeta qna-->
-                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" >
+                        <Button Background="{x:Null}" BorderBrush="{x:Null}" Margin="20,0,20,10" Click="goto_ComingSoon">
                             <Grid Width="270" Height="140">
                                 <StackPanel Width="250" Panel.ZIndex="1">
                                     <!-- titulo card -->

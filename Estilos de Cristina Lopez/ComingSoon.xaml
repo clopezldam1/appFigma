@@ -15,11 +15,9 @@
         <!-- NavBar (parte superior BOTTOM)-->
         <uc:NavBar DockPanel.Dock="Top"/>
         <!-- Contenido de la página -->
-        <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
-            <StackPanel AllowDrop="True" Background="White" Width="1394">
-
-            </StackPanel>
-        </ScrollViewer>
+        <StackPanel Height="490"   DockPanel.Dock="Top">
+            <Image Source="imgs/comingSoon.png" Width="1394"/>
+        </StackPanel>
 
         <!-- Footer Simple (parte inferior fijo)-->
         <uc:FooterSimple DockPanel.Dock="Bottom" Background="#FF8ECDA8" />

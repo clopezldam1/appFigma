@@ -20,7 +20,7 @@ namespace Estilos_de_Cristina_Lopez
     public partial class ContactForm : Window
     {
         public ContactForm()
-        {e
+        {
             InitializeComponent();
         }
 
@@ -38,7 +38,9 @@ namespace Estilos_de_Cristina_Lopez
 
         private void clearTextBox(object sender, RoutedEventArgs e)
         {
-            
+           
+                //this = (Textbox) this.Clear();
+               
         }
     }
 }

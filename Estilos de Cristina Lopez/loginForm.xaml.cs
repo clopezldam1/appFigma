@@ -26,25 +26,25 @@ namespace Estilos_de_Cristina_Lopez
 
         }
 
-        private void boton_signUp(object sender, RoutedEventArgs e)
+        private void goto_ContactForm(object sender, RoutedEventArgs e)
         {
-            SignUpForm signUpForm = new SignUpForm();
+            ContactForm contactForm = new ContactForm();
             this.Close();
-            signUpForm.Show();
+            contactForm.Show();
         }
 
-        private void boton_home(object sender, RoutedEventArgs e)
+        private void goto_Home(object sender, RoutedEventArgs e)
         {
             homePage home = new homePage();
             this.Close();
             home.Show();
         }
 
-        private void goto_ContactForm(object sender, RoutedEventArgs e)
+        private void goto_SignUpForm(object sender, RoutedEventArgs e)
         {
-            ContactForm contactForm = new ContactForm();
+            SignUpForm signUpForm = new SignUpForm();
             this.Close();
-            contactForm.Show();
+            signUpForm.Show();
         }
     }
 }

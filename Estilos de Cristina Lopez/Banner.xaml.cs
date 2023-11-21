@@ -30,7 +30,7 @@ namespace Estilos_de_Cristina_Lopez
         /*
         private void goto_Back(object sender, RoutedEventArgs e)
         {
-  
+            //intentar hacerlo mediante binding (ejemplo: https://learn.microsoft.com/es-es/windows/apps/design/basics/navigation-history-and-backwards-navigation)
         }
         */
 

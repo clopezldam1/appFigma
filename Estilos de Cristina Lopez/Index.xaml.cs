@@ -24,9 +24,6 @@ namespace Estilos_de_Cristina_Lopez
             InitializeComponent();
         }
 
-        private void IndexCardNation_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }
