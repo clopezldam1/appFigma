@@ -8,14 +8,14 @@
       mc:Ignorable="d" 
       d:DesignHeight="490" d:DesignWidth="1394"
      Title="CreatiNation: Explora tu creatividad" Height="700" Width="1400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
-   
+
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
         <uc:Banner DockPanel.Dock="Top"/>
 
         <!-- NavBar (parte superior BOTTOM)-->
         <uc:NavBar DockPanel.Dock="Top"/>
-        
+
         <!-- Contenido de la página -->
         <StackPanel DockPanel.Dock="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" AllowDrop="True" Height="490"  Width="1394" Background="White" ClipToBounds="True">
 
@@ -28,7 +28,7 @@
                     <StackPanel Height="490" Width="800">
 
                         <!-- caja rosa de inicio sesión -->
-                        <Grid Width="800" Margin="0,40,0,20" ClipToBounds="True" Height="270">
+                        <Grid Width="800" Margin="0,40,0,20" ClipToBounds="True" Height="288">
                             <!-- imagen fondo caja -->
                             <StackPanel Width="800" HorizontalAlignment="Center">
                                 <Image Source="imgs/mancha_pintura_13_salmon.png" MaxWidth="800"  Opacity="0.8" Stretch="UniformToFill" Height="165" Width="800"/>
@@ -47,7 +47,7 @@
                                 <StackPanel>
                                     <Label Content="Nombre de usuario o email:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                                     <Canvas Height="30">
-                                        <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True"/>
+                                        <TextBox x:Name="loginUserMail" Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True"/>
                                         <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                                     </Canvas>
                                 </StackPanel>
@@ -56,17 +56,19 @@
                                 <StackPanel>
                                     <Label Content="Contraseña de CreatiNation:" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5"/>
                                     <Canvas Height="30">
-                                        <TextBox Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True"/>
+                                        <TextBox Name="loginPass" Height="30" Text="Escribir aquí..." Canvas.Left="10" Width="480" AutomationProperties.IsRequiredForForm="True" />
                                         <Rectangle Height="30" Width="500" RadiusX="10" Fill="White" RadiusY="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                                     </Canvas>
                                 </StackPanel>
 
                                 <!-- botón Entrar -->
                                 <StackPanel Margin="0,15">
-                                    <Button Width="300" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_Home">
+                                    <Button Width="300" Height="73" BorderBrush="{x:Null}" Click="goto_Home" Margin="100,0">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="imgs/letrero_pintura_4.png" Stretch="UniformToFill"/>
+                                        </Button.Background> 
                                         <Canvas Height="60" Width="300">
-                                            <Label Content="Entrar" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Width="300"/>
-                                            <Image Source="imgs/letrero_pintura_4_salmon.png"  Width="300" Stretch="Fill" StretchDirection="Both" Height="40"/>
+                                            <Label Content="Entrar" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="38" Width="300"/>
                                         </Canvas>
                                     </Button>
                                 </StackPanel>
