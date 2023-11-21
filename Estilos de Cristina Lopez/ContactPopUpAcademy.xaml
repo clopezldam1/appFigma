@@ -16,12 +16,59 @@
         <uc:NavBar DockPanel.Dock="Top"/>
 
         <!-- Contenido de la página -->
-        <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
-            <StackPanel AllowDrop="True" Background="White" Width="1394">
+        <Grid Name="contenido" Height="495" VerticalAlignment="Top" DockPanel.Dock="Top" ClipToBounds="True">
+            <Canvas>
+                <Image Source="imgs/deco_fondo_general-1.png" Stretch="Fill" Panel.ZIndex="1" Width="1400">
+                    <Image.Effect>
+                        <BlurEffect KernelType="Box"/>
+                    </Image.Effect>
+                </Image>
+            </Canvas>
 
+            <StackPanel Width="600" Margin="0,50,0,0" Panel.ZIndex="1">
+                <!-- titulo -->
+                <StackPanel Margin="0,0,0,9">
+                    <Label Content="¡Hemos recibido su mensaje!" FontFamily="Segoe UI" FontWeight="Bold" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" Padding="15" />
+                    <Canvas Height="5" Background="Black" Margin="0,0,0,20"/>
+                </StackPanel>
+
+                <TextBlock FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5" TextWrapping="WrapWithOverflow" Width="600" TextAlignment="Justify" Margin="0,0,0,10" >
+                    Nuestro equipo lo revisará en las próximas 48h y, en caso de ser necesario, nos pondremos en contacto con usted lo antes posible.
+                </TextBlock>
+
+                <TextBlock FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="5" TextWrapping="WrapWithOverflow" Width="600" TextAlignment="Justify" Margin="0,0,0,10" >
+Gracias por confiar en CreatiAcademy.
+                </TextBlock>
+
+                <!-- botón registrarme -->
+                <StackPanel Margin="0,30">
+                    <Button Width="320" Height="80" Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_Home">
+                        <Canvas Height="80" Width="320">
+                            <Label Content="Volver a la página principal" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="70" Width="320"/>
+
+                            <Rectangle Width="320" Height="80" RadiusX="20" RadiusY="20" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="0" StrokeStartLineCap="Triangle">
+                                <Rectangle.Fill>
+                                    <SolidColorBrush Color="#FFC59B3B" Opacity="0.6"/>
+                                </Rectangle.Fill>
+                                <Rectangle.Effect>
+                                    <DropShadowEffect ShadowDepth="1" BlurRadius="30" Color="#FFFFCCCC" Opacity="0.09"/>
+                                </Rectangle.Effect>
+                            </Rectangle>
+                        </Canvas>
+                    </Button>
+                </StackPanel>
             </StackPanel>
-        </ScrollViewer>
 
+            <Rectangle Height="390" Width="660" RadiusX="30" RadiusY="30" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="0" Margin="40" StrokeStartLineCap="Triangle" RenderTransformOrigin="0.501,0.55">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFF5E9CD" Opacity="0.6"/>
+                </Rectangle.Fill>
+                <Rectangle.Effect>
+                    <DropShadowEffect ShadowDepth="1" BlurRadius="30" Color="#FFFFCCCC" Opacity="0.09"/>
+                </Rectangle.Effect>
+            </Rectangle>
+
+        </Grid>
         <!-- Footer Simple (parte inferior fijo)-->
         <uc:FooterSimple DockPanel.Dock="Bottom" Background="#FF8ECDA8" />
 

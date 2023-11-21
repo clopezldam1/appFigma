@@ -26,7 +26,9 @@ namespace Estilos_de_Cristina_Lopez
 
         private void goto_Home(object sender, RoutedEventArgs e)
         {
-
+            homePage home = new homePage();
+            this.Close();
+            home.Show();
         }
     }
 }

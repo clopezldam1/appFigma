@@ -8,17 +8,6 @@
         mc:Ignorable="d"
          d:DesignHeight="490" d:DesignWidth="1394"  Width="1400" Height="700"
       Title="CreatiNation: Explora tu creatividad" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
-    <Window.Resources>
-        <Style TargetType="RadioButton">
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="FontFamily" Value="Segoe UI"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="Padding" Value="10,0"/>
-            <Setter Property="Margin" Value="10,0,0,0"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-        </Style>
-    </Window.Resources>
 
     <DockPanel>
         <!-- Banner (parte superior TOP)-->
