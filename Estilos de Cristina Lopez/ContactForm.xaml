@@ -28,7 +28,7 @@
         <uc:NavBar DockPanel.Dock="Top"/>
 
         <!-- Contenido de la página -->
-        <ScrollViewer Height="495" VerticalAlignment="Top" DockPanel.Dock="Top" >
+        <ScrollViewer Height="490" VerticalAlignment="Top" DockPanel.Dock="Top" >
             <Grid Name="contenido" Height="Auto">
 
                 <Grid Background="White" Width="1394" Panel.ZIndex="0" >

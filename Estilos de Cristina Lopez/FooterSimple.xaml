@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
              mc:Ignorable="d" 
-             d:DesignHeight="85" d:DesignWidth="1394">
+             d:DesignHeight="80" d:DesignWidth="1394">
     
-    <StackPanel Height="85" Orientation="Horizontal" VerticalAlignment="Bottom" Width="Auto">
+    <StackPanel Height="80" Orientation="Horizontal" VerticalAlignment="Bottom" Width="Auto">
         <StackPanel.Background>
             <ImageBrush ImageSource="imgs/mancha_acuarela_6.png" Stretch="None" TileMode="Tile">
                 <ImageBrush.RelativeTransform>

@@ -23,6 +23,7 @@ namespace Estilos_de_Cristina_Lopez
         public loginForm()
         {
             InitializeComponent();
+
         }
 
         private void boton_signUp(object sender, RoutedEventArgs e)

@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Estilos_de_Cristina_Lopez"
              mc:Ignorable="d" 
+             x:Name="root"
               d:DesignHeight="52.8" d:DesignWidth="1394">
     <StackPanel Orientation="Horizontal">
         <StackPanel.Background>
@@ -22,10 +23,12 @@
         </Button>
 
         <!-- Menú button BACK-->
+        <!-- 
         <Button ToolTip="Volver" Height="40" Width="60" BorderBrush="{x:Null}" Margin="0,5" Background="{x:Null}" Click="goto_Back">
             <Image Source="imgs/icon_back.png" Stretch="Uniform"/>
         </Button>
-
+         -->
+        
         <!-- Image banner letras NATION -->
         <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Click="goto_AboutUs">
             <TextBlock Text="CreatiNation" Height="50" Width="1030" TextAlignment="Center" FontSize="38" VerticalAlignment="Center" Padding="40,0,0,0" FontFamily="Segoe Script" FontWeight="Bold" Margin="0,0,0,2.3"/>

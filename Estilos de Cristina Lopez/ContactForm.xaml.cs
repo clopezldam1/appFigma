@@ -20,8 +20,8 @@ namespace Estilos_de_Cristina_Lopez
     public partial class ContactForm : Window
     {
         public ContactForm()
-        {
-            //InitializeComponent();
+        {e
+            InitializeComponent();
         }
 
         private void Boton_popUp_contact(object sender, RoutedEventArgs e)

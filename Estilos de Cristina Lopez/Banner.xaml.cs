@@ -20,15 +20,19 @@ namespace Estilos_de_Cristina_Lopez
     /// </summary>
     public partial class Banner : UserControl
     {
+
         public Banner()
         {
             InitializeComponent();
+
         }
 
+        /*
         private void goto_Back(object sender, RoutedEventArgs e)
         {
-
+  
         }
+        */
 
         private void goto_Home(object sender, RoutedEventArgs e)
         {
