@@ -154,7 +154,7 @@
 
                         <!-- botón enviar -->
                         <StackPanel Margin="0,30">
-                            <Button Width="300" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Boton_popUp_contact">
+                            <Button Width="300" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_ContactPopUp">
                                 <Canvas Height="60" Width="300">
                                     <Label Content="Registrarme" FontFamily="Segoe UI" FontWeight="Medium"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Padding="5" Panel.ZIndex="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="300"/>
                                     <Image Source="imgs/letrero_pintura_4_blue.png"  Width="300" Stretch="Fill" StretchDirection="Both" Height="60"/>

@@ -16,12 +16,69 @@
         <uc:NavBar DockPanel.Dock="Top"/>
 
         <!-- Contenido de la página -->
-        <ScrollViewer Height="490"  Width="1394" DockPanel.Dock="Top">
-            <StackPanel AllowDrop="True" Background="White" Width="1394">
-          
-            </StackPanel>
-        </ScrollViewer>
-        
+        <Grid Height="490"  Width="1394" DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="500"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="imgs/deco_fondo_pintura_2.png" Stretch="UniformToFill"/>
+            </Grid.Background>
+
+
+            <!-- imagen logotipo-->
+            <Grid DockPanel.Dock="Right" Panel.ZIndex="1" Grid.Column="1" ScrollViewer.CanContentScroll="False">
+                <Button Background="{x:Null}" BorderBrush="{x:Null}" Click="goto_Home" HorizontalAlignment="Center" Height="350">
+                    <Image Source="imgs/logo_provisional-removebg-preview.png" Stretch="Uniform"/>
+                </Button>
+            </Grid>
+
+            <ScrollViewer AllowDrop="True" Panel.ZIndex="0" Grid.Column="0" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                <StackPanel  HorizontalAlignment="Center" Width="700">
+                    <!--titulo-->
+                    <StackPanel Margin="10,30,0,20" >
+                        <Label Content="¡Bienvenido a CreatiNation!" FontFamily="Segoe UI BLACK" FontSize="40" Foreground="Black" Padding="15" />
+                    </StackPanel>
+
+                    <TextBlock FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="10" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="0,0,0,10">
+                        <TextBlock.Text>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh cras pulvinar mattis nunc sed blandit. Risus at ultrices mi tempus imperdiet nulla. Gravida quis blandit turpis cursus in hac. 
+                        </TextBlock.Text>
+                    </TextBlock>
+
+                    <TextBlock FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="10" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="0,0,0,10">
+                        <TextBlock.Text>
+                            Nam at lectus urna duis convallis convallis tellus id. Libero nunc consequat interdum varius sit amet mattis vulputate enim. Senectus et netus et malesuada fames ac turpis egestas. Tristique magna sit amet purus gravida quis blandit turpis cursus. Enim diam vulputate ut pharetra sit amet. Sed vulputate mi sit amet mauris commodo quis imperdiet.
+                        </TextBlock.Text>
+                    </TextBlock>
+
+                    <TextBlock FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="10" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="0,0,0,10">
+                        <TextBlock.Text>
+                            Magnis dis parturient montes nascetur. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Senectus et netus et malesuada. In mollis nunc sed id semper risus in. Felis eget nunc lobortis mattis aliquam faucibus purus in.
+                        </TextBlock.Text>
+                    </TextBlock>
+
+                    <TextBlock FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="10" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="0,0,0,10">
+                        <TextBlock.Text>
+                            Et molestie ac feugiat sed. Erat pellentesque adipiscing commodo elit at imperdiet dui. Egestas maecenas pharetra convallis posuere morbi leo.
+Eget mauris pharetra et ultrices. Donec massa sapien faucibus et molestie. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis.
+                        </TextBlock.Text>
+                    </TextBlock>
+
+                    <TextBlock FontFamily="Segoe UI" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" Foreground="black" Padding="10" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="0,0,0,10">
+                        <TextBlock.Text>
+
+                            Lacus vestibulum sed arcu non odio euismod lacinia. Gravida dictum fusce ut placerat orci. Non consectetur a erat nam at lectus urna duis.
+                        </TextBlock.Text>
+                    </TextBlock>
+
+                </StackPanel>
+
+            </ScrollViewer>
+
+           
+        </Grid>
+
         <!-- Footer Simple (parte inferior fijo)-->
         <uc:FooterSimple DockPanel.Dock="Bottom" Background="#FF8ECDA8" />
 

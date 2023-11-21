@@ -310,6 +310,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BBDD\dbo.nomTabla.sql" />
+    <Resource Include="imgs\logo_provisional-removebg-preview.png" />
     <Resource Include="imgs\comingSoon.png" />
     <Resource Include="imgs\letrero_pintura_4_green.png" />
     <Resource Include="imgs\letrero_pintura_4_yellow.png" />

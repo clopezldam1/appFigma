@@ -23,5 +23,10 @@ namespace Estilos_de_Cristina_Lopez
         {
             InitializeComponent();
         }
+
+        private void goto_Home(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
