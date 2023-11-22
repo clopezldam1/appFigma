@@ -43,6 +43,12 @@ namespace Estilos_de_Cristina_Lopez
             SignUpPopUp signUpPopUp = new SignUpPopUp();
             this.Close();
             signUpPopUp.Show();
+            RegistrarUser();
+        }
+
+        private void RegistrarUser()
+        {
+            string insertar = "";
         }
     }
 }
