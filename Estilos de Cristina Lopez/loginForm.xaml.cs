@@ -26,18 +26,14 @@ namespace Estilos_de_Cristina_Lopez
 
         }
 
-        private void goto_ContactForm(object sender, RoutedEventArgs e)
-        {
-            ContactForm contactForm = new ContactForm();
-            this.Close();
-            contactForm.Show();
-        }
-
         private void goto_Home(object sender, RoutedEventArgs e)
         {
-            homePage home = new homePage();
-            this.Close();
-            home.Show();
+            if(loginUserMail.Text.Length > 0 && loginPass.Text.Length > 0)
+            {
+                homePage home = new homePage();
+                this.Close();
+                home.Show();
+            }
         }
 
         private void goto_SignUpForm(object sender, RoutedEventArgs e)
