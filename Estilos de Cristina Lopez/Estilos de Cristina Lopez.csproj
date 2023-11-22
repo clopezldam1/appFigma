@@ -341,13 +341,16 @@
     <Resource Include="imgs\mancha_pintura_13_blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BBDD\dbo.nomTabla.sql" />
     <Resource Include="imgs\deco_fondo_ripped_paper.png" />
     <Resource Include="imgs\logo_provisional-removebg-preview.png" />
     <Resource Include="imgs\comingSoon.png" />
     <Resource Include="imgs\letrero_pintura_4_green.png" />
     <Resource Include="imgs\letrero_pintura_4_yellow.png" />
     <Resource Include="imgs\deco_fondo_pintura_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BBDD\dbo.ContactForms.sql" />
+    <Content Include="BBDD\dbo.Usuarios.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
