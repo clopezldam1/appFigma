@@ -32,5 +32,15 @@ namespace Estilos_de_Cristina_Lopez.Properties {
                 return ((string)(this["BDcreatination"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Dsn=CreatiNation")]
+        public string conexionBD {
+            get {
+                return ((string)(this["conexionBD"]));
+            }
+        }
     }
 }

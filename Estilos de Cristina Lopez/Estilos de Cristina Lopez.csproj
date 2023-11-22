@@ -87,6 +87,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatosAPP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosAPP.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FooterSimple.xaml.cs">
       <DependentUpon>FooterSimple.xaml</DependentUpon>
     </Compile>
@@ -257,6 +262,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatosAPP.xsc">
+      <DependentUpon>DatosAPP.xsd</DependentUpon>
+    </None>
+    <None Include="DatosAPP.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosAPP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatosAPP.xss">
+      <DependentUpon>DatosAPP.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
