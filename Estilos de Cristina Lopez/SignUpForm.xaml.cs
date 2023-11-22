@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace Estilos_de_Cristina_Lopez
 {
@@ -21,8 +22,10 @@ namespace Estilos_de_Cristina_Lopez
     public partial class SignUpForm : Window
     {
         public SignUpForm()
-        {
+        { 
             InitializeComponent();
+            string conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BD"].ConnectionString;
+
         }
 
         private void boton_home(object sender, RoutedEventArgs e)
