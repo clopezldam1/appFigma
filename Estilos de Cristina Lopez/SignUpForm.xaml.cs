@@ -42,7 +42,9 @@ namespace Estilos_de_Cristina_Lopez
         public SignUpForm()
         { 
             InitializeComponent();
-             conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BD"].ConnectionString;
+             //conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BD.mdf"].ConnectionString;
+            //StringBuilder sb;
+          //SqlConnectionStringBuilder("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename='CreatiNation_DB.mdf';Integrated Security=True;Connect Timeout=30"); //ConnectionStrings[1].ConnectionString;
             //sqlConnection = new SqlConnection(conexionBD);
         }
 
@@ -53,25 +55,38 @@ namespace Estilos_de_Cristina_Lopez
             home.Show();
         }
 
-        private void boton_popUp_signup(object sender, RoutedEventArgs e)
+        private void boton_Registrar(object sender, RoutedEventArgs e)
+        {
+            goto_SignUpPopUp();
+            ValidarFormulario();
+            RegistrarUser();
+        }
+
+        private void goto_SignUpPopUp()
         {
             SignUpPopUp signUpPopUp = new SignUpPopUp();
             this.Close();
             signUpPopUp.Show();
-
-            ValidarFormulario();
-            RegistrarUser();
         }
 
         private void ValidarFormulario()
         {
             Nombre = inputNombre.Text;
             Apellidos = inputApellidos.Text;
-            FechaNaci = inputFechaNaci.SelectedDate.Value;
 
-            // Genero;
-            // Pronombres;
+            FechaNaci = inputFechaNaci.SelectedDate.Value.Date;
 
+            if (checkHombre.IsChecked == true | checkMujer.IsChecked == true | checkOtro.IsChecked == true) 
+            {
+                if (checkHombre.IsChecked == true) { Genero = "Hombre"; Pronombres = "Él"; }
+                if (checkMujer.IsChecked == true) { Genero = "Mujer"; Pronombres = "Ella"; }
+                if (checkOtro.IsChecked == true) { Genero = "Otro"; Pronombres = inputPronombres.Text; }
+            }
+            else
+            {
+                MessageBox.Show("Marca una de las casillas de 'género', por favor.");
+            }
+                   
             try
             {
                 if (inputTelefono.Text.Length == 9) { Telefono = Int32.Parse(inputTelefono.Text); }
@@ -92,10 +107,14 @@ namespace Estilos_de_Cristina_Lopez
         {
 
             DataSet dataSet = new DataSet();
-            string insertar = "INSERT INTO CreatiNation_BD.Usuarios ";
-            hacerInsert(dataSet, insertar, conexionBD);
+            string insertar = string.Format("INSERT INTO Usuarios VALUES {0},{1},{2},{3},{4},{5},{6},{7},{8};", Nombre, Apellidos, FechaNaci, Genero, Pronombres, Telefono, Username, Email, Contrasena);
 
+            string connectionString = "Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename='C: /Users/clope/Desktop/Asignaturas/desarrollo interfaces/UT1/wpf/Entrega5_tarea1.11/Estilos de Cristina Lopez/Estilos de Cristina Lopez/BBDD/CreatiNation_DB.mdf';Integrated Security=True;Connect Timeout=30";
 
+            //hacerInsert(dataSet, insertar, connectionString);
+            //al hacer la inserción salta error porque el ConnectionString no es correcto
+
+         
 
 
         }
