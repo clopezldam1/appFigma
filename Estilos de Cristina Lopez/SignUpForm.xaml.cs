@@ -34,7 +34,7 @@ namespace Estilos_de_Cristina_Lopez
         public SignUpForm()
         { 
             InitializeComponent();
-            conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BDConnectionString"].ConnectionString;
+            //conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BDConnectionString"].ConnectionString;
     
             conexionSQL = new SqlConnection(conexionBD);
         }
@@ -48,7 +48,7 @@ namespace Estilos_de_Cristina_Lopez
 
         private void boton_Registrar(object sender, RoutedEventArgs e)
         {
-            goto_SignUpPopUp();
+        
             ValidarFormulario();
             RegistrarUser();
         }
@@ -62,10 +62,34 @@ namespace Estilos_de_Cristina_Lopez
 
         private void ValidarFormulario()
         {
-            Nombre = inputNombre.Text;
-            Apellidos = inputApellidos.Text;
+            if (inputNombre.Text.Length == 0)
+            {
+                Nombre = inputNombre.Text; }
+            else
+            {
+                MessageBox.Show("El campo 'Nombre' no puede estar vacío.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
-            FechaNaci = inputFechaNaci.SelectedDate.Value.Date;
+            if (inputApellidos.Text.Length == 0)
+            {
+                Apellidos = inputApellidos.Text;
+            }
+            else
+            {
+                MessageBox.Show("El campo 'Apellidos' no puede estar vacío.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                FechaNaci = inputFechaNaci.SelectedDate.Value;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Debes seleccionar una fecha de nacimiento.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
             if (checkHombre.IsChecked == true | checkMujer.IsChecked == true | checkOtro.IsChecked == true) 
             {
@@ -75,7 +99,8 @@ namespace Estilos_de_Cristina_Lopez
             }
             else
             {
-                MessageBox.Show("Marca una de las casillas de 'género', por favor.");
+                MessageBox.Show("Marca una de las casillas de 'género', por favor.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
                    
             try
@@ -84,14 +109,41 @@ namespace Estilos_de_Cristina_Lopez
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("ERROR: El número de teléfono no es válido.");
+                MessageBox.Show("El número de teléfono no es válido.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-           
-            Username = inputUsername.Text;
-            Email = inputEmail.Text;
 
-            if (inputContrasena.Text.Equals(repetirContrasena.Text)) { Contrasena = inputContrasena.Text; }
-          
+            if (inputUsername.Text.Length == 0)
+            {
+                Username = inputUsername.Text;
+            }
+            else
+            {
+                MessageBox.Show("Introduce un nombre de usuario, por favor.","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+                return;
+            }
+
+            if (inputEmail.Text.Length == 0)
+            {
+                Email = inputEmail.Text;
+            }
+            else
+            {
+                MessageBox.Show("Introduce un correo electrónico, por favor.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (inputContrasena.Text.Equals(repetirContrasena.Text)) 
+            { 
+                Contrasena = inputContrasena.Text;
+            }
+            else
+            {
+                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            goto_SignUpPopUp(); //si todo es valido, sigues adelante
         }
 
         private void RegistrarUser()
