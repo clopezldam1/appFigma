@@ -135,6 +135,121 @@
     <Compile Include="NavBar.xaml.cs">
       <DependentUpon>NavBar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\0_coming-soon.g.i.cs" />
+    <Compile Include="obj\Debug\3_homePage.g.i.cs" />
+    <Compile Include="obj\Debug\4.1_loginForm_Account.g.i.cs" />
+    <Compile Include="obj\Debug\5.1_SignUp Form_ Account.g.i.cs" />
+    <Compile Include="obj\Debug\5.1_SignUp-Form_ Account.g.i.cs" />
+    <Compile Include="obj\Debug\5.2_SignUp-popUp_Account.g.i.cs" />
+    <Compile Include="obj\Debug\5.2_SignUp-popUp_Accouy.g.i.cs" />
+    <Compile Include="obj\Debug\5_2_SignUp-popUp_Account.g.i.cs" />
+    <Compile Include="obj\Debug\AboutUs.g.cs" />
+    <Compile Include="obj\Debug\AboutUs.g.i.cs" />
+    <Compile Include="obj\Debug\App.g.cs" />
+    <Compile Include="obj\Debug\App.g.i.cs" />
+    <Compile Include="obj\Debug\Banner.g.cs" />
+    <Compile Include="obj\Debug\Banner.g.i.cs" />
+    <Compile Include="obj\Debug\ComingSoon.g.cs" />
+    <Compile Include="obj\Debug\ComingSoon.g.i.cs" />
+    <Compile Include="obj\Debug\ContactForm.g.cs" />
+    <Compile Include="obj\Debug\ContactForm.g.i.cs" />
+    <Compile Include="obj\Debug\ContactFormAcademy.g.cs" />
+    <Compile Include="obj\Debug\ContactFormAcademy.g.i.cs" />
+    <Compile Include="obj\Debug\ContactPopUp.g.cs" />
+    <Compile Include="obj\Debug\ContactPopUp.g.i.cs" />
+    <Compile Include="obj\Debug\ContactPopUpAcademy.g.cs" />
+    <Compile Include="obj\Debug\ContactPopUpAcademy.g.i.cs" />
+    <Compile Include="obj\Debug\Estilos de Cristina Lopez_Content.g.cs" />
+    <Compile Include="obj\Debug\Estilos de Cristina Lopez_Content.g.i.cs" />
+    <Compile Include="obj\Debug\FooterSimple.g.cs" />
+    <Compile Include="obj\Debug\FooterSimple.g.i.cs" />
+    <Compile Include="obj\Debug\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="obj\Debug\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Include="obj\Debug\homePage.g.cs" />
+    <Compile Include="obj\Debug\homePage.g.i.cs" />
+    <Compile Include="obj\Debug\Index.g.cs" />
+    <Compile Include="obj\Debug\Index.g.i.cs" />
+    <Compile Include="obj\Debug\IndexButton.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCard.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCardAcademy.g.cs" />
+    <Compile Include="obj\Debug\IndexCardAcademy.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCardAccount.g.cs" />
+    <Compile Include="obj\Debug\IndexCardAccount.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCardNation.g.cs" />
+    <Compile Include="obj\Debug\IndexCardNation.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCardQna.g.cs" />
+    <Compile Include="obj\Debug\IndexCardQna.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCardShop.g.cs" />
+    <Compile Include="obj\Debug\IndexCardShop.g.i.cs" />
+    <Compile Include="obj\Debug\IndexCardTutorial.g.cs" />
+    <Compile Include="obj\Debug\IndexCardTutorial.g.i.cs" />
+    <Compile Include="obj\Debug\loginForm.g.cs" />
+    <Compile Include="obj\Debug\loginForm.g.i.cs" />
+    <Compile Include="obj\Debug\LogOutPopUp.g.cs" />
+    <Compile Include="obj\Debug\LogOutPopUp.g.i.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="obj\Debug\NavBar.g.cs" />
+    <Compile Include="obj\Debug\NavBar.g.i.cs" />
+    <Compile Include="obj\Debug\Pantallas\loginForm.g.i.cs" />
+    <Compile Include="obj\Debug\SignUpForm.g.cs" />
+    <Compile Include="obj\Debug\SignUpForm.g.i.cs" />
+    <Compile Include="obj\Debug\SignUpPopUp.g.cs" />
+    <Compile Include="obj\Debug\SignUpPopUp.g.i.cs" />
+    <Compile Include="obj\Debug\UserControl1.g.i.cs" />
+    <Compile Include="obj\Debug\UserControls\Banner.g.i.cs" />
+    <Compile Include="obj\Debug\UserControls\IndexButton.g.i.cs" />
+    <Compile Include="obj\Debug\UserControls\IndexCard.g.i.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\AboutUs.g.cs" />
+    <Compile Include="obj\Release\AboutUs.g.i.cs" />
+    <Compile Include="obj\Release\App.g.cs" />
+    <Compile Include="obj\Release\App.g.i.cs" />
+    <Compile Include="obj\Release\Banner.g.cs" />
+    <Compile Include="obj\Release\Banner.g.i.cs" />
+    <Compile Include="obj\Release\ComingSoon.g.cs" />
+    <Compile Include="obj\Release\ComingSoon.g.i.cs" />
+    <Compile Include="obj\Release\ContactForm.g.cs" />
+    <Compile Include="obj\Release\ContactForm.g.i.cs" />
+    <Compile Include="obj\Release\ContactFormAcademy.g.cs" />
+    <Compile Include="obj\Release\ContactFormAcademy.g.i.cs" />
+    <Compile Include="obj\Release\ContactPopUp.g.cs" />
+    <Compile Include="obj\Release\ContactPopUp.g.i.cs" />
+    <Compile Include="obj\Release\ContactPopUpAcademy.g.cs" />
+    <Compile Include="obj\Release\ContactPopUpAcademy.g.i.cs" />
+    <Compile Include="obj\Release\Estilos de Cristina Lopez_Content.g.cs" />
+    <Compile Include="obj\Release\Estilos de Cristina Lopez_Content.g.i.cs" />
+    <Compile Include="obj\Release\FooterSimple.g.cs" />
+    <Compile Include="obj\Release\FooterSimple.g.i.cs" />
+    <Compile Include="obj\Release\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="obj\Release\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Include="obj\Release\homePage.g.cs" />
+    <Compile Include="obj\Release\homePage.g.i.cs" />
+    <Compile Include="obj\Release\Index.g.cs" />
+    <Compile Include="obj\Release\Index.g.i.cs" />
+    <Compile Include="obj\Release\IndexCardAcademy.g.cs" />
+    <Compile Include="obj\Release\IndexCardAcademy.g.i.cs" />
+    <Compile Include="obj\Release\IndexCardAccount.g.cs" />
+    <Compile Include="obj\Release\IndexCardAccount.g.i.cs" />
+    <Compile Include="obj\Release\IndexCardNation.g.cs" />
+    <Compile Include="obj\Release\IndexCardNation.g.i.cs" />
+    <Compile Include="obj\Release\IndexCardQna.g.cs" />
+    <Compile Include="obj\Release\IndexCardQna.g.i.cs" />
+    <Compile Include="obj\Release\IndexCardShop.g.cs" />
+    <Compile Include="obj\Release\IndexCardShop.g.i.cs" />
+    <Compile Include="obj\Release\IndexCardTutorial.g.cs" />
+    <Compile Include="obj\Release\IndexCardTutorial.g.i.cs" />
+    <Compile Include="obj\Release\loginForm.g.cs" />
+    <Compile Include="obj\Release\loginForm.g.i.cs" />
+    <Compile Include="obj\Release\LogOutPopUp.g.cs" />
+    <Compile Include="obj\Release\LogOutPopUp.g.i.cs" />
+    <Compile Include="obj\Release\mainwindow.g.i.cs" />
+    <Compile Include="obj\Release\NavBar.g.cs" />
+    <Compile Include="obj\Release\NavBar.g.i.cs" />
+    <Compile Include="obj\Release\SignUpForm.g.cs" />
+    <Compile Include="obj\Release\SignUpForm.g.i.cs" />
+    <Compile Include="obj\Release\SignUpPopUp.g.cs" />
+    <Compile Include="obj\Release\SignUpPopUp.g.i.cs" />
     <Compile Include="SignUpForm.xaml.cs">
       <DependentUpon>SignUpForm.xaml</DependentUpon>
     </Compile>
@@ -244,6 +359,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\Estilos de Cristina Lopez.g.resources" />
+    <EmbeddedResource Include="obj\Debug\Estilos_de_Cristina_Lopez.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\Estilos de Cristina Lopez.g.resources" />
+    <EmbeddedResource Include="obj\Release\Estilos_de_Cristina_Lopez.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -259,6 +378,65 @@
     <None Include="BBDD\DatosAPP.xss">
       <DependentUpon>DatosAPP.xsd</DependentUpon>
     </None>
+    <None Include="bin\Debug\Estilos de Cristina Lopez.exe.config" />
+    <None Include="bin\Release\Estilos de Cristina Lopez.exe.config" />
+    <None Include="obj\Debug\AboutUs.baml" />
+    <None Include="obj\Debug\App.baml" />
+    <None Include="obj\Debug\Banner.baml" />
+    <None Include="obj\Debug\ComingSoon.baml" />
+    <None Include="obj\Debug\ContactForm.baml" />
+    <None Include="obj\Debug\ContactFormAcademy.baml" />
+    <None Include="obj\Debug\ContactPopUp.baml" />
+    <None Include="obj\Debug\ContactPopUpAcademy.baml" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez_MarkupCompile.cache" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez_MarkupCompile.i.cache" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez_MarkupCompile.i.lref" />
+    <None Include="obj\Debug\Estilos de Cristina Lopez_MarkupCompile.lref" />
+    <None Include="obj\Debug\FooterSimple.baml" />
+    <None Include="obj\Debug\homePage.baml" />
+    <None Include="obj\Debug\Index.baml" />
+    <None Include="obj\Debug\IndexCardAcademy.baml" />
+    <None Include="obj\Debug\IndexCardAccount.baml" />
+    <None Include="obj\Debug\IndexCardNation.baml" />
+    <None Include="obj\Debug\IndexCardQna.baml" />
+    <None Include="obj\Debug\IndexCardShop.baml" />
+    <None Include="obj\Debug\IndexCardTutorial.baml" />
+    <None Include="obj\Debug\loginForm.baml" />
+    <None Include="obj\Debug\LogOutPopUp.baml" />
+    <None Include="obj\Debug\NavBar.baml" />
+    <None Include="obj\Debug\SignUpForm.baml" />
+    <None Include="obj\Debug\SignUpPopUp.baml" />
+    <None Include="obj\Release\AboutUs.baml" />
+    <None Include="obj\Release\App.baml" />
+    <None Include="obj\Release\Banner.baml" />
+    <None Include="obj\Release\ComingSoon.baml" />
+    <None Include="obj\Release\ContactForm.baml" />
+    <None Include="obj\Release\ContactFormAcademy.baml" />
+    <None Include="obj\Release\ContactPopUp.baml" />
+    <None Include="obj\Release\ContactPopUpAcademy.baml" />
+    <None Include="obj\Release\Estilos de Cristina Lopez.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\Estilos de Cristina Lopez.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\Estilos de Cristina Lopez_MarkupCompile.cache" />
+    <None Include="obj\Release\Estilos de Cristina Lopez_MarkupCompile.lref" />
+    <None Include="obj\Release\FooterSimple.baml" />
+    <None Include="obj\Release\homePage.baml" />
+    <None Include="obj\Release\Index.baml" />
+    <None Include="obj\Release\IndexCardAcademy.baml" />
+    <None Include="obj\Release\IndexCardAccount.baml" />
+    <None Include="obj\Release\IndexCardNation.baml" />
+    <None Include="obj\Release\IndexCardQna.baml" />
+    <None Include="obj\Release\IndexCardShop.baml" />
+    <None Include="obj\Release\IndexCardTutorial.baml" />
+    <None Include="obj\Release\loginForm.baml" />
+    <None Include="obj\Release\LogOutPopUp.baml" />
+    <None Include="obj\Release\NavBar.baml" />
+    <None Include="obj\Release\SignUpForm.baml" />
+    <None Include="obj\Release\SignUpPopUp.baml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -353,6 +531,23 @@
   <ItemGroup>
     <Content Include="BBDD\dbo.ContactForms.sql" />
     <Content Include="BBDD\dbo.Usuarios.sql" />
+    <Resource Include="obj\Debug\Estilos de Cristina Lopez.csproj.FileListAbsolute.txt" />
+    <Content Include="bin\Debug\Estilos de Cristina Lopez.exe" />
+    <Content Include="bin\Debug\Estilos de Cristina Lopez.pdb" />
+    <Content Include="bin\Release\Estilos de Cristina Lopez.exe" />
+    <Content Include="bin\Release\Estilos de Cristina Lopez.pdb" />
+    <Content Include="obj\Debug\Estilos de Cristina Lopez.exe" />
+    <Content Include="obj\Debug\Estilos de Cristina Lopez.pdb" />
+    <Content Include="obj\Debug\TempPE\ALLDATA.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\BBDD.DatosAPP.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\DatosAPP.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Resource Include="obj\Release\Estilos de Cristina Lopez.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Estilos de Cristina Lopez.exe" />
+    <Content Include="obj\Release\Estilos de Cristina Lopez.pdb" />
+    <Content Include="obj\Release\TempPE\BBDD.DatosAPP.Designer.cs.dll" />
+    <Content Include="obj\Release\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -365,6 +560,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\BBDD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
