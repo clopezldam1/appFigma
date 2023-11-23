@@ -349,13 +349,6 @@
     <Resource Include="imgs\deco_fondo_pintura_5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BBDD\CreatiNation_DB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BBDD\CreatiNation_DB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>CreatiNation_DB.mdf</DependentUpon>
-    </Content>
     <Content Include="BBDD\dbo.ContactForms.sql" />
     <Content Include="BBDD\dbo.Usuarios.sql" />
   </ItemGroup>

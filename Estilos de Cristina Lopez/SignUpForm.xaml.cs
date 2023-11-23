@@ -23,16 +23,8 @@ namespace Estilos_de_Cristina_Lopez
     /// </summary>
     public partial class SignUpForm : Window
     {
-        /* REFERENCIAS:
-         https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqldataadapter?view=dotnet-plat-ext-7.0
-        https://learn.microsoft.com/es-es/dotnet/api/system.data.sqlclient.sqldataadapter.insertcommand?view=dotnet-plat-ext-7.0#system-data-sqlclient-sqldataadapter-insertcommand
-        https://learn.microsoft.com/es-es/dotnet/framework/data/adonet/generating-commands-with-commandbuilders
-        https://learn.microsoft.com/es-es/sql/t-sql/statements/insert-transact-sql?view=sql-server-ver16
-        https://learn.microsoft.com/es-es/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6?view=vs-2022
-
-        https://es.stackoverflow.com/questions/16804/c%C3%B3mo-asignar-el-valor-seleccionado-de-un-radio-button-a-un-campo-en-la-base-de
-         */
-        SqlConnection sqlConnection;
+        
+        SqlConnection conexionSQL;
         string conexionBD;
 
         string Nombre, Apellidos, Genero, Pronombres, Username, Email, Contrasena;
@@ -42,10 +34,9 @@ namespace Estilos_de_Cristina_Lopez
         public SignUpForm()
         { 
             InitializeComponent();
-             //conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BD.mdf"].ConnectionString;
-            //StringBuilder sb;
-          //SqlConnectionStringBuilder("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename='CreatiNation_DB.mdf';Integrated Security=True;Connect Timeout=30"); //ConnectionStrings[1].ConnectionString;
-            //sqlConnection = new SqlConnection(conexionBD);
+            conexionBD = ConfigurationManager.ConnectionStrings["Estilos_de_Cristina_Lopez.Properties.Settings.CreatiNation_BDConnectionString"].ConnectionString;
+    
+            conexionSQL = new SqlConnection(conexionBD);
         }
 
         private void boton_home(object sender, RoutedEventArgs e)
@@ -105,27 +96,14 @@ namespace Estilos_de_Cristina_Lopez
 
         private void RegistrarUser()
         {
+            string insertar = string.Format("INSERT INTO Usuarios VALUES {0},{1},{2},{3},{4},{5},{6},{7},{8}", Nombre, Apellidos, FechaNaci, Genero, Pronombres, Telefono, Username, Email, Contrasena);
 
-            DataSet dataSet = new DataSet();
-            string insertar = string.Format("INSERT INTO Usuarios VALUES {0},{1},{2},{3},{4},{5},{6},{7},{8};", Nombre, Apellidos, FechaNaci, Genero, Pronombres, Telefono, Username, Email, Contrasena);
-
-            string connectionString = "Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename='C: /Users/clope/Desktop/Asignaturas/desarrollo interfaces/UT1/wpf/Entrega5_tarea1.11/Estilos de Cristina Lopez/Estilos de Cristina Lopez/BBDD/CreatiNation_DB.mdf';Integrated Security=True;Connect Timeout=30";
-
-            //hacerInsert(dataSet, insertar, connectionString);
-            //al hacer la inserción salta error porque el ConnectionString no es correcto
-
-         
-
-
-        }
-
-        private static void hacerInsert(DataSet dataset, string connectionString, string queryString)
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            SqlDataAdapter adapter = new SqlDataAdapter(insertar, conexionSQL);
+            using (adapter)
             {
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.InsertCommand = new SqlCommand(queryString, connection);
+                adapter.InsertCommand = new SqlCommand(insertar, conexionSQL);
             }
         }
+
     }
 }
